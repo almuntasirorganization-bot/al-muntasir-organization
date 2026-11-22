@@ -1,0 +1,2328 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আল মুনতাসির সংগঠন | AL MUNTASIR ORGANIZATION | المؤسسة المنتصر</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Hind Siliguri, Noto Sans Bengali, Amiri & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Hind Siliguri"', '"Noto Sans Bengali"', '"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['"Amiri"', 'serif'],
+                        latin: ['"Plus Jakarta Sans"', '"Hind Siliguri"', 'sans-serif'],
+                    },
+                    colors: {
+                        bkash: {
+                            500: '#E2136E',
+                            600: '#C40E5D',
+                            700: '#9E0A4A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+            background-color: #ecfdf5;
+            color: #1e293b;
+            overflow-x: hidden;
+        }
+        .hero-bg {
+            background: radial-gradient(circle at 85% 15%, rgba(251, 191, 36, 0.16), transparent 45%),
+                        linear-gradient(135deg, #022c22 0%, #064e3b 55%, #0f293a 100%);
+        }
+        .soft-mint-bg {
+            background: linear-gradient(180deg, #f0fdf4 0%, #dcfce7 100%);
+        }
+        .warm-tinted-bg {
+            background: linear-gradient(180deg, #fffbeb 0%, #fef3c7 50%, #ecfdf5 100%);
+        }
+        .sky-tinted-bg {
+            background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        .islamic-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .card-elevated {
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .card-elevated:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 28px -10px rgba(6, 78, 59, 0.16);
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: #ffffff !important;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-emerald-700 selection:text-white">
+
+    <!-- কাস্টম টোস্ট নোটিফিকেশন বক্স -->
+    <div id="toast" class="fixed bottom-20 right-5 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none max-w-sm no-print">
+        <div class="bg-slate-900 text-white px-4 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 border border-emerald-500/40">
+            <i id="toast-icon" class="fa-solid fa-circle-check text-emerald-400 text-lg shrink-0"></i>
+            <span id="toast-message" class="text-sm font-medium leading-snug">সফলভাবে সম্পন্ন হয়েছে!</span>
+        </div>
+    </div>
+
+    <!-- ফ্লোটিং অটো হোয়াটসঅ্যাপ বাটন (01615-975515) -->
+    <a href="https://wa.me/8801615975515?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20%E0%A6%86%E0%A6%B2%20%E0%A6%AE%E0%A7%81%E0%A6%A8%E0%A6%A4%E0%A6%BE%E0%A6%B8%E0%A6%BF%E0%A6%B0%20%E0%A6%B8%E0%A6%82%E0%A6%97%E0%A6%A0%E0%A6%A8%20%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%20%E0%A6%AF%E0%A7%8B%E0%A6%97%E0%A6%BE%E0%A6%AF%E0%A7%8B%E0%A6%97%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A5%A4" target="_blank" rel="noopener noreferrer" aria-label="হোয়াটসঅ্যাপে যোগাযোগ করুন" class="fixed bottom-5 right-5 z-40 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-3 rounded-full shadow-2xl border-2 border-white/80 flex items-center gap-2 transition-transform hover:scale-105 no-print">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="text-xs sm:text-sm font-bold">হোয়াটসঅ্যাপ (01615-975515)</span>
+    </a>
+
+    <!-- স্টিকি নেভিগেশন হেডার: সব ডিভাইসে কার্যকর ৩ ডট (⋮) মেনু বাটনসহ -->
+    <header class="sticky top-0 z-50 bg-blue-950/95 backdrop-blur-md border-b border-blue-800/80 text-white shadow-lg no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 gap-3">
+                <a href="#home" class="font-bold text-base sm:text-lg text-amber-300 truncate">
+                    আল মুনতাসির সংগঠন
+                </a>
+
+                <!-- ডেস্কটপ দ্রুত লিংকসমূহ -->
+                <nav class="hidden lg:flex items-center gap-4 text-xs xl:text-sm font-semibold text-blue-100">
+                    <a href="#about" class="hover:text-amber-300 transition-colors">পরিচিতি</a>
+                    <a href="#activities" class="hover:text-amber-300 transition-colors">কার্যক্রম ও ফান্ড</a>
+                    <a href="#leaders" class="hover:text-amber-300 transition-colors">দায়িত্বশীলগন</a>
+                    <a href="#gallery-media" class="hover:text-amber-300 transition-colors">পিক ও ভিডিও</a>
+                    <a href="#masala" class="hover:text-amber-300 transition-colors">শরীয়তে মাসআলা</a>
+                    <a href="#complaint-box" class="hover:text-rose-300 transition-colors">অভিযোগ বক্স</a>
+                    <a href="#bkash-payment" class="hover:text-pink-300 transition-colors">বিকাশ</a>
+                </nav>
+
+                <!-- ডানপাশে সদস্য লিংক বাটন + ৩ ডট (⋮) ড্রপডাউন মেনু বাটন -->
+                <div class="flex items-center gap-2 shrink-0 relative">
+                    <a href="#member-link" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-bold px-3.5 py-2 rounded-xl shadow transition-all flex items-center gap-1.5">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <span>সদস্য লিংক</span>
+                    </a>
+
+                    <!-- ৩ ডট (⋮) আইকন বাটন (সব ডিভাইসে দৃশ্যমান) -->
+                    <button type="button" id="three-dot-menu-btn" aria-haspopup="true" aria-expanded="false" aria-label="সব অপশন খুলুন" class="w-10 h-10 rounded-xl bg-blue-900 hover:bg-blue-800 border border-blue-700 text-amber-300 flex items-center justify-center shadow transition-colors focus:outline-none focus:ring-2 focus:ring-amber-400">
+                        <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                    </button>
+
+                    <!-- ৩ ডট ড্রপডাউন অপশন প্যানেল -->
+                    <div id="three-dot-dropdown" class="hidden absolute right-0 top-12 w-72 sm:w-80 bg-blue-950 border-2 border-amber-400/50 rounded-2xl shadow-2xl py-2.5 px-2 z-50 max-h-[82vh] overflow-y-auto">
+                        <div class="px-3 py-1.5 border-b border-blue-800/80 mb-1.5 flex items-center justify-between">
+                            <span class="text-xs font-bold text-amber-300">সকল মেনু ও অপশনসমূহ</span>
+                            <span class="text-[11px] text-sky-300 font-latin">AL MUNTASIR</span>
+                        </div>
+                        <div class="grid grid-cols-1 gap-1 text-sm font-semibold text-blue-50">
+                            <a href="#about" class="dropdown-nav-item flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-blue-900 hover:text-amber-300 transition-colors">
+                                <i class="fa-solid fa-circle-info text-sky-400 w-4 text-center"></i>
+                                <span>১. পরিচিতি ও পটভূমি</span>
+                            </a>
+                            <a href="#activities" class="dropdown-nav-item flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-blue-900 hover:text-amber-300 transition-colors">
+                                <i class="fa-solid fa-hand-holding-heart text-emerald-400 w-4 text-center"></i>
+                                <span>২. কার্যক্রম ও এনায়েত ফান্ড</span>
+                            </a>
+                            <a href="#structure" class="dropdown-nav-item flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-blue-900 hover:text-amber-300 transition-colors">
+                                <i class="fa-solid fa-sitemap text-teal-400 w-4 text-center"></i>
+                                <span>৩. সাংগঠনিক কাঠামো</span>
+                            </a>
+                            <a href="#leaders" class="dropdown-nav-item flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-blue-900 hover:text-amber-300 transition-colors">
+                                <i class="fa-solid fa-users-gear text-amber-400 w-4 text-center"></i>
+                                <span>৪. সংগঠনের দায়িত্বশীলগন</span>
+                            </a>
+                            <a href="#vision" class="dropdown-nav-item flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-blue-900 hover:text-amber-300 transition-colors">
+                                <i class="fa-solid fa-compass text-sky-300 w-4 text-center"></i>
+                                <span>৫. ভবিষ্যৎ পরিকল্পনা ও চ্যালেঞ্জ</span>
+                            </a>
+                            <a href="#youth" class="dropdown-nav-item flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-blue-900 hover:text-amber-300 transition-colors">
+                                <i class="fa-solid fa-bullhorn text-amber-300 w-4 text-center"></i>
+                                <span>৬. সমাজ ও যুবসমাজের বার্তা</span>
+                            </a>
+                            <a href="#gallery-media" class="dropdown-nav-item flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-blue-900 hover:text-amber-300 transition-colors">
+                                <i class="fa-solid fa-images text-sky-400 w-4 text-center"></i>
+                                <span>৭. সংগঠনের কার্যক্রমের পিক</span>
+                            </a>
+                            <a href="#org-videos" class="dropdown-nav-item flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-blue-900 hover:text-amber-300 transition-colors">
+                                <i class="fa-solid fa-circle-play text-amber-400 w-4 text-center"></i>
+                                <span>৮. সংগঠনের ভিডিও</span>
+                            </a>
+                            <a href="#masala" class="dropdown-nav-item flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-blue-900 hover:text-amber-300 transition-colors">
+                                <i class="fa-solid fa-book-quran text-emerald-400 w-4 text-center"></i>
+                                <span>৯. শরীয়তে মাসআলা</span>
+                            </a>
+                            <a href="#faq" class="dropdown-nav-item flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-blue-900 hover:text-amber-300 transition-colors">
+                                <i class="fa-solid fa-circle-question text-sky-300 w-4 text-center"></i>
+                                <span>১০. সংগঠন কেন্দ্রিক প্রশ্ন ও উত্তর</span>
+                            </a>
+                            <a href="#complaint-box" class="dropdown-nav-item flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-rose-950/80 text-rose-200 hover:text-rose-100 transition-colors">
+                                <i class="fa-solid fa-box-archive text-rose-400 w-4 text-center"></i>
+                                <span>১১. অভিযোগ বক্স</span>
+                            </a>
+                            <a href="#bkash-payment" class="dropdown-nav-item flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-pink-950/80 text-pink-200 hover:text-pink-100 transition-colors">
+                                <i class="fa-solid fa-mobile-screen-button text-pink-400 w-4 text-center"></i>
+                                <span>১২. বিকাশ পেমেন্ট (01624-507765)</span>
+                            </a>
+                            <a href="#member-link" class="dropdown-nav-item flex items-center gap-2.5 px-3 py-2.5 mt-1 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold transition-colors">
+                                <i class="fa-solid fa-id-card w-4 text-center"></i>
+                                <span>১৩. সদস্য লিংক ও পরিচিতি ডাউনলোড</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ১. টপ ব্লু ব্যানার: প্রথম লাইনে AL MUNTASIR ORGANIZATION ও المؤسسة المنتصر, দ্বিতীয় লাইনে সমান বড় আল মুনতাসির সংগঠন, নিচে ঠিকানা -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-950 text-white border-b-4 border-amber-400/80 shadow-xl">
+        <div class="islamic-pattern absolute inset-0 opacity-70 pointer-events-none"></div>
+        <div class="absolute -top-24 -left-24 w-72 h-72 bg-sky-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-amber-400/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-11 relative z-10 text-center">
+            <!-- প্রথম লাইন: ইংরেজি ও আরবি -->
+            <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-5">
+                <span class="font-latin text-xl sm:text-3xl md:text-4xl font-extrabold text-sky-300 tracking-wider uppercase drop-shadow">
+                    AL MUNTASIR ORGANIZATION
+                </span>
+                <span class="text-blue-400 text-2xl sm:text-3xl font-light">|</span>
+                <span class="font-arabic text-3xl sm:text-5xl md:text-6xl font-bold text-amber-300 leading-tight drop-shadow">
+                    المؤسسة المنتصر
+                </span>
+            </div>
+
+            <!-- দ্বিতীয় লাইন: উপরের দুটি লেখার সমান প্রস্থে ও বড় করে "আল মুনতাসির সংগঠন" -->
+            <h1 class="mt-2 sm:mt-3 text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-wide sm:tracking-[0.06em] drop-shadow-md">
+                আল মুনতাসির সংগঠন
+            </h1>
+
+            <!-- নিচে ঠিকানা -->
+            <div class="mt-4 inline-flex items-center justify-center gap-2 bg-blue-950/85 border border-sky-400/35 px-5 py-2 rounded-full text-sky-100 text-sm sm:text-base font-semibold shadow">
+                <i class="fa-solid fa-location-dot text-amber-300"></i>
+                <span>৩ নং চরমোহনা, দক্ষিণ রায়পুর, রায়পুর, লক্ষ্মীপুর</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ২. হিরো সেকশন: "অন্যায়, অজ্ঞতা ও দারিদ্র্যের বিরুদ্ধে..." রঙিন ব্যাকগ্রাউন্ড বক্সে -->
+    <section id="home" class="hero-bg islamic-pattern text-white py-14 sm:py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2 bg-emerald-950/90 border border-amber-400/40 px-4 py-1.5 rounded-full text-amber-300 text-xs sm:text-sm font-semibold shadow">
+                        <i class="fa-solid fa-mosque"></i>
+                        <span>শতভাগ অরাজনৈতিক, অলাভজনক, মানবিক ও শিক্ষামূলক সামাজিক সংগঠন</span>
+                    </div>
+
+                    <!-- রঙিন ব্যাকগ্রাউন্ড বক্স (সাদা নয়) -->
+                    <div class="bg-gradient-to-r from-teal-900/95 via-emerald-900/95 to-cyan-950/95 border-2 border-amber-400/45 rounded-3xl p-5 sm:p-7 shadow-2xl">
+                        <h2 class="text-2xl sm:text-4xl lg:text-[40px] font-bold leading-snug text-amber-50">
+                            অন্যায়, অজ্ঞতা ও দারিদ্র্যের বিরুদ্ধে <span class="text-amber-300 underline decoration-amber-400/60 underline-offset-4">মানবতার বিজয়</span> নিশ্চিত করাই আমাদের অঙ্গীকার
+                        </h2>
+                    </div>
+
+                    <p class="text-emerald-100/95 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto lg:mx-0">
+                        <strong>হযরত মাওলানা আবু নাইম সাহেবের</strong> দূরদর্শী চিন্তা, নৈতিক দিকনির্দেশনা ও নিঃস্বার্থ উদ্যোগে ২০২৪ সালের ২৪ সেপ্টেম্বর, বুধবার, মাগরিবের নামাজের পর <strong>মোল্লাবাড়ি সংলগ্ন ব্যাপারি বাড়ির কাচারিতে</strong> (স্থান: ৩ নং চরমোহনা, রায়পুর, লক্ষ্মীপুর) প্রতিষ্ঠিত হয় <strong>আল মুনতাসির সংগঠন</strong>।
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 sm:gap-3.5 justify-center lg:justify-start pt-1 no-print">
+                        <a href="#leaders" class="bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold px-5 py-3.5 rounded-xl shadow-lg transition-all flex items-center gap-2 text-sm sm:text-base">
+                            <i class="fa-solid fa-users-gear"></i>
+                            <span>দায়িত্বশীলগন</span>
+                        </a>
+                        <a href="#gallery-media" class="bg-sky-600/85 hover:bg-sky-500 text-white border border-sky-300/40 font-semibold px-5 py-3.5 rounded-xl transition-all flex items-center gap-2 text-sm sm:text-base">
+                            <i class="fa-solid fa-photo-film"></i>
+                            <span>পিক ও ভিডিও</span>
+                        </a>
+                        <a href="#complaint-box" class="bg-rose-700/90 hover:bg-rose-600 text-white border border-rose-300/35 font-semibold px-5 py-3.5 rounded-xl transition-all flex items-center gap-2 text-sm sm:text-base">
+                            <i class="fa-solid fa-box-archive"></i>
+                            <span>অভিযোগ বক্স</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- সংক্ষিপ্ত তথ্য কার্ড -->
+                <div class="lg:col-span-5">
+                    <div class="bg-blue-950/85 backdrop-blur-md border border-blue-400/35 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-4">
+                        <div class="border-b border-white/15 pb-4">
+                            <div class="text-xl sm:text-2xl font-bold text-white">আল মুনতাসির সংগঠন</div>
+                            <div class="font-latin text-xs sm:text-sm font-bold text-sky-300 tracking-wider mt-0.5">AL MUNTASIR ORGANIZATION</div>
+                            <div class="font-arabic text-2xl text-amber-300 mt-1">المؤسسة المنتصر</div>
+                        </div>
+
+                        <div class="space-y-2.5 text-xs sm:text-sm text-emerald-100">
+                            <div class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-user-tie text-amber-400 mt-1"></i>
+                                <span><strong>প্রতিষ্ঠাতা ও প্রধান উপদেষ্টা:</strong> হযরত মাওলানা আবু নাইম সাহেব</span>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-calendar-check text-amber-400 mt-1"></i>
+                                <span><strong>প্রতিষ্ঠাকাল:</strong> ২৪ সেপ্টেম্বর ২০২৪, বুধবার, মাগরিবের নামাজের পর</span>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-location-dot text-amber-400 mt-1"></i>
+                                <span><strong>স্থান:</strong> ৩ নং চরমোহনা, রায়পুর, লক্ষ্মীপুর</span>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <i class="fa-brands fa-whatsapp text-emerald-400 mt-1"></i>
+                                <span><strong>অটো হোয়াটসঅ্যাপ:</strong> <a href="https://wa.me/8801615975515" target="_blank" rel="noopener noreferrer" class="text-amber-300 underline font-mono">01615-975515</a></span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <div class="bg-white/10 border border-amber-400/30 rounded-2xl p-3 text-center">
+                                <div class="text-amber-300 font-bold text-lg">৫০০ ৳</div>
+                                <div class="text-xs text-emerald-100">প্রবাসী মাসিক তহবিল</div>
+                            </div>
+                            <div class="bg-white/10 border border-emerald-400/30 rounded-2xl p-3 text-center">
+                                <div class="text-amber-300 font-bold text-lg">২০০ ৳</div>
+                                <div class="text-xs text-emerald-100">দেশী মাসিক তহবিল</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ১. পরিচিতি ও পটভূমি -->
+    <section id="about" class="py-16 sm:py-20 soft-mint-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-12">
+                <span class="inline-block bg-emerald-700 text-white text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">১. পরিচিতি ও পটভূমি</span>
+                <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mt-3">নামকরণের তাৎপর্য, প্রতিষ্ঠার সূচনা ও মূল দর্শন</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+                <!-- ১.১ নামকরণের তাৎপর্য -->
+                <div class="card-elevated bg-amber-50/95 rounded-3xl p-6 sm:p-7 border border-amber-200/90 shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-11 h-11 rounded-xl bg-emerald-700 text-amber-300 flex items-center justify-center font-bold text-lg shrink-0">
+                            <i class="fa-solid fa-star-and-crescent"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-emerald-800">১. "আল-মুনতাসির" নামকরণের তাৎপর্য</span>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900">
+                                <span class="font-arabic text-emerald-800 text-xl">المنتصر</span> — "বিজয়ী" বা "সাহায্যপ্রাপ্ত"
+                            </h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                        "আল-মুনতাসির" (<span class="font-arabic text-emerald-800 font-bold">المنتصر</span>) একটি আরবি শব্দ, যার অর্থ <strong>"বিজয়ী"</strong> বা <strong>"সাহায্যপ্রাপ্ত"</strong>। আমাদের মূল ভাবনা ছিল—অন্যায়, অজ্ঞতা ও দারিদ্র্যের বিরুদ্ধে মানবতার বিজয় নিশ্চিত করা। সমাজের অসহায় ও পিছিয়ে পড়া মানুষদের পাশে দাঁড়িয়ে তাদের মুখে হাসি ফোটানোই আমাদের প্রকৃত বিজয়। এই মহৎ চেতনা থেকেই সংগঠনটির নাম <strong>"আল-মুনতাসির"</strong> রাখা হয়েছে।
+                    </p>
+                </div>
+
+                <!-- ১.২ প্রতিষ্ঠার তারিখ, স্থান ও পটভূমি -->
+                <div class="card-elevated bg-sky-50/95 rounded-3xl p-6 sm:p-7 border border-sky-200/90 shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-11 h-11 rounded-xl bg-blue-900 text-amber-300 flex items-center justify-center font-bold text-lg shrink-0">
+                            <i class="fa-solid fa-calendar-day"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-blue-800">২. প্রতিষ্ঠার তারিখ, স্থান ও পটভূমি</span>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900">২৪ সেপ্টেম্বর ২০২৪, বুধবার, মাগরিবের নামাজের পর</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                        আমাদের <strong>"আল-মুনতাসির সংগঠন"</strong> আনুষ্ঠানিকভাবে স্থাপিত হয় <strong>২০২৪ সালের ২৪ সেপ্টেম্বর, বুধবার, মাগরিবের নামাজের পর</strong>। আর এই মহৎ যাত্রার সূচনা হয়েছিল <strong>মোল্লাবাড়ি সংলগ্ন ব্যাপারি বাড়ির কাচারিতে</strong> (স্থান: <strong>৩ নং চরমোহনা, রায়পুর, লক্ষ্মীপুর</strong>)।
+                    </p>
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed mt-3">
+                        আমাদের আশেপাশের সমাজে প্রায়ই দেখা যায়, অনেক অসহায় মানুষ সামান্য চিকিৎসা, শিক্ষা বা জরুরি প্রয়োজনে পাশে কাউকে পান না। আবার অনেক তরুণ সমাজসেবা করতে চাইলেও সঠিক প্ল্যাটফর্মের অভাবে তা করতে পারেন না। মূলত এই শূন্যতা পূরণের তাগিদ থেকেই সেই কাচারি ঘরের আন্তরিক পরিবেশ ও সম্মিলিত সিদ্ধান্তে কয়েকজন নিবেদিতপ্রাণ, উদ্যমী তরুণকে সাথে নিয়ে আমাদের যাত্রার শুরু। শুরুতে সামর্থ্য সীমিত থাকলেও ইচ্ছাশক্তি ছিল প্রবল; আর মাগরিবের পর একান্ত ঘরোয়া ও আন্তরিক আলোচনায় শুরু হওয়া সেই ছোট্ট উদ্যোগটিই আজ সবার ভালোবাসা, শ্রম ও ঐক্যে একটি সুশৃঙ্খল সাংগঠনিক কাঠামোতে দাঁড়িয়েছে।
+                    </p>
+                </div>
+
+                <!-- ১.৩ মূল দর্শন ও অরাজনৈতিক অবস্থান -->
+                <div class="card-elevated bg-teal-50/95 rounded-3xl p-6 sm:p-7 border border-teal-200/90 shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-11 h-11 rounded-xl bg-teal-700 text-amber-200 flex items-center justify-center font-bold text-lg shrink-0">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-teal-800">৩. মূল দর্শন ও অরাজনৈতিক অবস্থান</span>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900">শতভাগ অরাজনৈতিক ও অলাভজনক</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                        আল-মুনতাসির সংগঠন <strong>শতভাগ অরাজনৈতিক, অলাভজনক এবং মানবিক ও শিক্ষামূলক</strong> একটি সামাজিক সংগঠন। আমাদের কোনো রাজনৈতিক এজেন্ডা বা ব্যক্তিগত স্বার্থ নেই। শুধুমাত্র মানবতার কল্যাণ ও সমাজের ইতিবাচক পরিবর্তনই আমাদের একমাত্র লক্ষ্য।
+                    </p>
+                </div>
+
+                <!-- ১.৪ প্রতিষ্ঠাতা ও নেতৃত্ব -->
+                <div class="card-elevated bg-gradient-to-br from-emerald-900 to-emerald-950 text-white rounded-3xl p-6 sm:p-7 shadow-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-11 h-11 rounded-xl bg-amber-400 text-emerald-950 flex items-center justify-center font-bold text-lg shrink-0">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-amber-300">৪. প্রতিষ্ঠাতা ও প্রধান উপদেষ্টা</span>
+                            <h3 class="text-lg sm:text-xl font-bold text-white">হযরত মাওলানা আবু নাইম সাহেব</h3>
+                        </div>
+                    </div>
+                    <p class="text-emerald-100 text-sm sm:text-base leading-relaxed">
+                        সমাজসেবা ও মানবকল্যাণের মহৎ স্বপ্ন নিয়ে <strong>হযরত মাওলানা আবু নাইম সাহেবের</strong> হাত ধরেই এই সংগঠনটির শুভ সূচনা হয়েছে। তাঁর দূরদর্শী চিন্তা, নৈতিক দিকনির্দেশনা এবং নিঃস্বার্থ উদ্যোগের ফলেই একঝাঁক তরুণ একত্রিত হয়ে এই প্ল্যাটফর্মটি গড়ে তুলতে সক্ষম হয়েছেন। প্রতিষ্ঠালগ্ন থেকেই তিনি সংগঠনটির আদর্শ ও উদ্দেশ্য বাস্তবায়নে অভিভাবকসুলভ ভূমিকা পালন করে আসছেন।
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ২. কার্যক্রম ও সেবামূলক প্রজেক্ট -->
+    <section id="activities" class="py-16 sm:py-20 warm-tinted-bg border-t border-emerald-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-12">
+                <span class="inline-block bg-amber-500 text-slate-950 text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">২. কার্যক্রম ও সেবামূলক প্রজেক্ট সংক্রান্ত</span>
+                <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mt-3">সামাজিক সেবা, এনায়েত ফান্ড ও পরিকল্পনা</h2>
+            </div>
+
+            <!-- ২.১ বর্তমান সামাজিক ও মানবিক কার্যক্রম + ৩টি মূল ভিত্তি -->
+            <div class="bg-emerald-50/90 rounded-3xl p-6 sm:p-8 border border-emerald-200 shadow-sm mb-8">
+                <span class="text-xs font-bold text-emerald-800">১. বর্তমান সামাজিক ও মানবিক কার্যক্রম</span>
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-1 mb-3">বহুমুখী মানবিক ও শিক্ষামূলক সেবা</h3>
+                <p class="text-slate-700 text-sm sm:text-base leading-relaxed mb-6">
+                    বর্তমান সময়ে আল-মুনতাসির সংগঠন সমাজের অসহায়, দরিদ্র ও পিছিয়ে পড়া মানুষের পাশে দাঁড়াতে বহুমুখী সামাজিক ও মানবিক কার্যক্রম পরিচালনা করছে। এর মধ্যে রয়েছে <strong>জরুরি চিকিৎসা সহায়তা</strong>, <strong>অসহায় পরিবারের খাদ্য বা ঈদ/বিশেষ উপহার সামগ্রী বিতরণ</strong>, <strong>শিক্ষার্থীদের শিক্ষা উপকরণ ও সহায়তা প্রদান</strong> এবং <strong>সামাজিক সচেতনতামূলক উদ্যোগ</strong>। পাশাপাশি আমাদের কাজের মূল ভিত্তি হিসেবে তিনটি বিষয়কে সবসময় প্রাধান্য দেওয়া হয়:
+                </p>
+
+                <div class="grid sm:grid-cols-3 gap-4">
+                    <div class="p-4 rounded-2xl bg-teal-100/85 border border-teal-200">
+                        <div class="font-bold text-teal-950 text-base flex items-center gap-2">
+                            <i class="fa-solid fa-hands-holding-heart text-teal-700"></i>
+                            <span>মানবিক সেবা</span>
+                        </div>
+                        <p class="text-sm text-slate-700 mt-1.5">বিপদগ্রস্ত ও অসহায় মানুষের পাশে দাঁড়ানো।</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-amber-100/85 border border-amber-200">
+                        <div class="font-bold text-amber-950 text-base flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap text-amber-700"></i>
+                            <span>শিক্ষামূলক উন্নয়ন</span>
+                        </div>
+                        <p class="text-sm text-slate-700 mt-1.5">সমাজের তরুণ ও শিক্ষার্থীদের সুশিক্ষা ও নৈতিক মূল্যবোধে উদ্বুদ্ধ করা।</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-sky-100/85 border border-sky-200">
+                        <div class="font-bold text-sky-950 text-base flex items-center gap-2">
+                            <i class="fa-solid fa-people-group text-sky-700"></i>
+                            <span>ঐক্য ও ভ্রাতৃত্ব</span>
+                        </div>
+                        <p class="text-sm text-slate-700 mt-1.5">দেশ ও প্রবাসের মানুষদের একসূত্রে গেঁথে একটি সুন্দর, আদর্শ সমাজ বিনির্মাণ করা।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ২.২ এনায়েত ফান্ড ও মাসিক অনুদান -->
+            <div class="grid lg:grid-cols-12 gap-8 mb-8">
+                <div class="lg:col-span-7 bg-emerald-950 text-white rounded-3xl p-6 sm:p-8 shadow-lg">
+                    <span class="text-xs font-bold text-amber-300">২. নিয়মিত তহবিল ও অনুদান কার্যক্রম (এনায়েত ফান্ড)</span>
+                    <h3 class="text-xl sm:text-2xl font-bold mt-1 mb-3">এনায়েত ফান্ড — নিয়মিত মাসিক তহবিল</h3>
+                    <p class="text-emerald-100 text-sm sm:text-base leading-relaxed mb-6">
+                        আমাদের কার্যক্রমকে নিয়মিত ও সুশৃঙ্খলভাবে এগিয়ে নিতে <strong>এনায়েত ফান্ড</strong>-সহ নিয়মিত মাসিক তহবিল সংগ্রহের ব্যবস্থা রয়েছে। সংগঠনের সদস্য ও শুভাকাঙ্ক্ষীদের সম্মিলিত অংশগ্রহণে এই তহবিল গড়ে তোলা হয়। এই নিয়মিত মাসিক অনুদানের মাধ্যমে সংগৃহীত অর্থ <strong>স্বচ্ছতা ও জবাবদিহিতার সাথে</strong> জনকল্যাণমূলক ও জরুরি মানবিক কাজে ব্যয় করা হয়।
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 mb-5">
+                        <div class="bg-white/10 border border-amber-400/35 rounded-2xl p-4">
+                            <div class="text-xs text-amber-300 font-semibold">প্রবাসী ভাইদের জন্য মাসিক অনুদান</div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white mt-1">৫০০ টাকা</div>
+                            <div class="text-xs text-emerald-200 mt-1">মাসিক নির্ধারিত তহবিল</div>
+                        </div>
+                        <div class="bg-white/10 border border-emerald-400/35 rounded-2xl p-4">
+                            <div class="text-xs text-emerald-300 font-semibold">দেশী সদস্য/শুভাকাঙ্ক্ষীদের মাসিক অনুদান</div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white mt-1">২০০ টাকা</div>
+                            <div class="text-xs text-emerald-200 mt-1">মাসিক নির্ধারিত তহবিল</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-black/30 rounded-2xl p-4 border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3 no-print">
+                        <div class="text-xs sm:text-sm text-emerald-100">
+                            <strong class="text-amber-300">এনায়েত ফান্ড রেফারেন্স:</strong> অনুদান পাঠানোর সময় রেফারেন্সে <span class="font-mono bg-white/10 px-2 py-0.5 rounded text-amber-200">Enayet Fund</span> ব্যবহার করুন।
+                        </div>
+                        <button type="button" onclick="copyText('Enayet Fund', 'এনায়েত ফান্ড রেফারেন্স')" class="bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs px-3.5 py-2 rounded-xl shrink-0 transition-colors">
+                            <i class="fa-regular fa-copy mr-1"></i> রেফারেন্স কপি
+                        </button>
+                    </div>
+                </div>
+
+                <!-- অনুদান ক্যালকুলেটর ও অঙ্গীকার কার্ড -->
+                <div class="lg:col-span-5 bg-sky-50/95 rounded-3xl p-6 sm:p-8 border border-sky-200 shadow-sm flex flex-col justify-between no-print">
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900">এনায়েত ফান্ড অনুদান হিসাব ও অঙ্গীকার</h4>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1">ক্যাটাগরি নির্বাচন করে মাসিক বা মোট অনুদানের পরিমাণ নির্ধারণ করুন।</p>
+
+                        <div class="mt-4 space-y-2.5">
+                            <label class="flex items-center justify-between p-3 rounded-xl border border-sky-200 bg-emerald-50/70 cursor-pointer hover:border-emerald-500 transition-all">
+                                <div class="flex items-center gap-2.5">
+                                    <input type="radio" name="donorRole" value="500" checked onchange="syncFundAmount(500)" class="accent-emerald-700 w-4 h-4">
+                                    <span class="text-sm font-semibold text-slate-800">প্রবাসী ভাই (মাসিক ৫০০ টাকা)</span>
+                                </div>
+                                <span class="font-bold text-emerald-800">৳৫০০</span>
+                            </label>
+
+                            <label class="flex items-center justify-between p-3 rounded-xl border border-sky-200 bg-emerald-50/70 cursor-pointer hover:border-emerald-500 transition-all">
+                                <div class="flex items-center gap-2.5">
+                                    <input type="radio" name="donorRole" value="200" onchange="syncFundAmount(200)" class="accent-emerald-700 w-4 h-4">
+                                    <span class="text-sm font-semibold text-slate-800">দেশী সদস্য/শুভাকাঙ্ক্ষী (মাসিক ২০০ টাকা)</span>
+                                </div>
+                                <span class="font-bold text-emerald-800">৳২০০</span>
+                            </label>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 mt-4">
+                            <div>
+                                <label for="fund-months-input" class="block text-xs font-bold text-slate-700 mb-1">মাসের সংখ্যা</label>
+                                <input type="number" id="fund-months-input" value="1" min="1" max="24" oninput="recalcFundTotal()" class="w-full px-3.5 py-2.5 rounded-xl border border-sky-300 bg-amber-50/60 focus:ring-2 focus:ring-emerald-600 outline-none font-bold text-slate-900 text-sm">
+                            </div>
+                            <div>
+                                <label for="fund-amount-input" class="block text-xs font-bold text-slate-700 mb-1">মোট পরিমাণ (টাকা)</label>
+                                <input type="number" id="fund-amount-input" value="500" min="10" class="w-full px-3.5 py-2.5 rounded-xl border border-sky-300 bg-amber-50/60 focus:ring-2 focus:ring-emerald-600 outline-none font-bold text-emerald-900 text-sm">
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="fund-sender-name" class="block text-xs font-bold text-slate-700 mb-1">আপনার নাম (ঐচ্ছিক)</label>
+                            <input type="text" id="fund-sender-name" placeholder="নাম লিখুন" class="w-full px-4 py-2 rounded-xl border border-sky-300 bg-amber-50/60 focus:ring-2 focus:ring-emerald-600 outline-none text-sm">
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="submitFundPledge()" class="mt-5 w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3 rounded-xl shadow transition-all text-sm flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>এনায়েত ফান্ডে অনুদান নোট করুন</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ২.৩ তাৎক্ষণিক ও দীর্ঘমেয়াদী পরিকল্পনা -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card-elevated bg-rose-50/90 rounded-3xl p-6 border border-rose-200 shadow-sm">
+                    <div class="flex items-center gap-2.5 text-rose-800 font-bold text-sm mb-2">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>৩. তাৎক্ষণিক ও দীর্ঘমেয়াদী পরিকল্পনা — তাৎক্ষণিক পরিকল্পনা</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">জরুরি সংকটে দ্রুত ত্রাণ, চিকিৎসা বা আর্থিক সহায়তা</h4>
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                        কোনো পরিবার বা ব্যক্তি হঠাৎ অসুস্থতা, দুর্ঘটনা, প্রাকৃতিক দুর্যোগ বা জরুরি সংকটে পড়লে দ্রুত তহবিল ও সদস্যদের সমন্বয়ে তাৎক্ষণিক ত্রাণ, চিকিৎসা বা আর্থিক সহায়তা পৌঁছে দেওয়া।
+                    </p>
+                </div>
+
+                <div class="card-elevated bg-emerald-50/95 rounded-3xl p-6 border border-emerald-200 shadow-sm">
+                    <div class="flex items-center gap-2.5 text-emerald-800 font-bold text-sm mb-2">
+                        <i class="fa-solid fa-seedling"></i>
+                        <span>দীর্ঘমেয়াদী পরিকল্পনা</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">স্থায়ী ফান্ড, শিক্ষাবৃত্তি ও স্বনির্ভর কাঠামো</h4>
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                        নিয়মিত ফান্ড আরও শক্তিশালী করা, অসহায় শিক্ষার্থীদের শিক্ষাবৃত্তি বা নিয়মিত সহায়তার আওতায় আনা, আত্মকর্মসংস্থান বা টেকসই সহায়তার উদ্যোগ নেওয়া এবং দেশ-প্রবাসের তরুণদের নিয়ে একটি স্থায়ী, আদর্শ ও স্বনির্ভর সেবামূলক কাঠামো গড়ে তোলা।
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ৩. সাংগঠনিক কাঠামো ও জনবল -->
+    <section id="structure" class="py-16 sm:py-20 sky-tinted-bg border-t border-sky-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-12">
+                <span class="inline-block bg-blue-900 text-amber-300 text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">৩. সাংগঠনিক কাঠামো ও জনবল সংক্রান্ত</span>
+                <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mt-3">দেশ-প্রবাস সমন্বয়, দায়িত্ব ও সদস্য সংগ্রহ</h2>
+            </div>
+
+            <!-- ৩.১ মহান আল্লাহ তায়ালার সাহায্যের মুখাপেক্ষী -->
+            <div class="bg-emerald-100/90 border-l-4 border-emerald-700 rounded-r-2xl p-5 sm:p-6 mb-8 shadow-sm">
+                <p class="text-emerald-950 font-bold text-base sm:text-lg flex items-center gap-2.5">
+                    <i class="fa-solid fa-hands-praying text-emerald-700"></i>
+                    <span>১. প্রথমে আমরা মহান আল্লাহ তায়ালার সাহায্যের মুখাপেক্ষী।</span>
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- ৩.২ সদস্য সংখ্যা ও দেশ-প্রবাস সমন্বয় -->
+                <div class="bg-emerald-50/95 rounded-3xl p-6 sm:p-7 border border-emerald-200 shadow-sm">
+                    <span class="text-xs font-bold text-emerald-800">২. সদস্য সংখ্যা ও দেশ-প্রবাস সমন্বয়</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">দেশ ও প্রবাসের সুশৃঙ্খল সেতুবন্ধন</h3>
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed mb-4">
+                        আমাদের সংগঠনের সাথে বর্তমানে দেশ ও প্রবাস মিলিয়ে একটি নিবেদিতপ্রাণ ও সক্রিয় সদস্য পরিবার যুক্ত রয়েছে—যার সংখ্যা সময়ের সাথে সাথে এবং নতুন সদস্য যুক্ত হওয়ার মাধ্যমে আরও সমৃদ্ধ হচ্ছে।
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="bg-sky-50/90 p-4 rounded-2xl border border-sky-200">
+                            <h4 class="font-bold text-blue-950 text-sm sm:text-base flex items-center gap-2">
+                                <i class="fa-solid fa-laptop-code text-blue-700"></i>
+                                <span>ডিজিটাল ও অনলাইন সমন্বয়</span>
+                            </h4>
+                            <p class="text-slate-700 text-sm mt-1 leading-relaxed">
+                                ফেসবুক, মেসেঞ্জার গ্রুপ ও অনলাইন সভার মাধ্যমে প্রবাসী ভাইদের সাথে দেশের কার্যক্রমের আপডেট, তহবিলের হিসাব এবং সিদ্ধান্তসমূহ নিয়মিত শেয়ার করা হয়।
+                            </p>
+                        </div>
+
+                        <div class="bg-amber-50/90 p-4 rounded-2xl border border-amber-200">
+                            <h4 class="font-bold text-amber-950 text-sm sm:text-base flex items-center gap-2">
+                                <i class="fa-solid fa-people-arrows text-amber-700"></i>
+                                <span>মাঠপর্যায় ও সশরীরে বৈঠক</span>
+                            </h4>
+                            <p class="text-slate-700 text-sm mt-1 leading-relaxed">
+                                দেশে অবস্থানরত সদস্য ও দায়িত্বশীলরা সরাসরি মাঠে কাজ করেন, প্রয়োজন অনুযায়ী অফলাইন বৈঠক করেন এবং প্রবাসীদের পাঠানো অনুদান ও পরামর্শের আলোকে সেবামূলক কার্যক্রম বাস্তবায়ন করেন।
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ৩.৩ দায়িত্ব বণ্টনের মানদণ্ড ও নতুন সদস্য সংগ্রহ প্রক্রিয়া -->
+                <div class="bg-amber-50/95 rounded-3xl p-6 sm:p-7 border border-amber-200 shadow-sm">
+                    <span class="text-xs font-bold text-amber-800">৩. দায়িত্ব বণ্টনের মানদণ্ড ও নতুন সদস্য সংগ্রহ প্রক্রিয়া</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">যোগ্যতা ও আদর্শের ভিত্তিতে অগ্রযাত্রা</h3>
+
+                    <div class="space-y-4">
+                        <div class="bg-emerald-50/90 p-4 rounded-2xl border border-emerald-200">
+                            <h4 class="font-bold text-emerald-950 text-sm sm:text-base mb-1.5">দায়িত্ব বণ্টনে প্রাধান্য</h4>
+                            <p class="text-slate-700 text-sm leading-relaxed">
+                                কমিটিতে দায়িত্ব দেওয়ার ক্ষেত্রে আমরা পদ বা লোকদেখানো পরিচয়ের চেয়ে <strong>আন্তরিকতা, সময় দেওয়ার মানসিকতা, সততা, জবাবদিহিতা এবং কাজের প্রতি নিষ্ঠা</strong>-কে সবচেয়ে বেশি প্রাধান্য দিই। কে কোন কাজে দক্ষ এবং কার ওপর কোন দায়িত্ব দিলে কাজটি সুন্দর ও সুশৃঙ্খলভাবে সম্পন্ন হবে, সেটি বিবেচনা করেই দায়িত্ব বণ্টন করা হয়।
+                            </p>
+                        </div>
+
+                        <div class="bg-sky-50/90 p-4 rounded-2xl border border-sky-200">
+                            <h4 class="font-bold text-blue-950 text-sm sm:text-base mb-1.5">নতুন সদস্য সংগ্রহের প্রক্রিয়া</h4>
+                            <p class="text-slate-700 text-sm leading-relaxed">
+                                সমাজসেবা ও মানবকল্যাণে আগ্রহী যেকোনো ব্যক্তি আমাদের সংগঠনের অরাজনৈতিক, শিক্ষামূলক ও মানবিক আদর্শের সাথে একমত হলে সদস্য হওয়ার জন্য আগ্রহ প্রকাশ করতে পারেন। আমরা যাচাই-বাছাই ও প্রাথমিক আলোচনার মাধ্যমে আগ্রহীদের যুক্ত করি, যাতে নতুন সদস্যরা সংগঠনের নিয়মকানুন, শৃঙ্খলা ও নিয়মিত কার্যক্রমের সাথে সহজেই মানিয়ে নিতে পারেন এবং দায়িত্বশীল ভূমিকা রাখতে পারেন।
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ৪. সংগঠনের দায়িত্বশীলগন -->
+    <section id="leaders" class="py-16 sm:py-20 soft-mint-bg border-t border-emerald-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+                <div>
+                    <span class="inline-block bg-emerald-800 text-amber-300 text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">
+                        <i class="fa-solid fa-users-gear mr-1"></i> সংগঠনের দায়িত্বশীলগন
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mt-3">উপদেষ্টা ও দায়িত্বশীল পরিষদের তালিকা</h2>
+                    <p class="text-slate-700 text-sm sm:text-base mt-1">
+                        সততা, আন্তরিকতা ও জবাবদিহিতার সাথে সংগঠন পরিচালনায় নিয়োজিত দায়িত্বশীলবৃন্দ।
+                    </p>
+                </div>
+                <button type="button" onclick="toggleAddLeaderForm()" class="bg-blue-900 hover:bg-blue-800 text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow transition-colors inline-flex items-center gap-2 shrink-0 no-print">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>নতুন দায়িত্বশীল যুক্ত করুন</span>
+                </button>
+            </div>
+
+            <!-- নতুন দায়িত্বশীল যোগ করার ফর্ম -->
+            <div id="add-leader-box" class="hidden mb-8 bg-sky-50/95 border border-sky-300 rounded-3xl p-5 sm:p-6 shadow-sm no-print">
+                <h3 class="font-bold text-slate-900 text-base mb-3">তালিকায় নতুন দায়িত্বশীল যুক্ত করুন</h3>
+                <form id="add-leader-form" class="grid sm:grid-cols-4 gap-3 items-end">
+                    <div>
+                        <label for="ldr-name" class="block text-xs font-bold text-slate-700 mb-1">দায়িত্বশীলের নাম *</label>
+                        <input type="text" id="ldr-name" required placeholder="পূর্ণ নাম লিখুন" class="w-full px-3.5 py-2 rounded-xl border border-sky-300 bg-emerald-50/60 text-sm outline-none">
+                    </div>
+                    <div>
+                        <label for="ldr-role" class="block text-xs font-bold text-slate-700 mb-1">পদবি / দায়িত্ব *</label>
+                        <input type="text" id="ldr-role" required placeholder="যেমন: সভাপতি / সাধারণ সম্পাদক" class="w-full px-3.5 py-2 rounded-xl border border-sky-300 bg-emerald-50/60 text-sm outline-none">
+                    </div>
+                    <div>
+                        <label for="ldr-location" class="block text-xs font-bold text-slate-700 mb-1">অবস্থান / মোবাইল</label>
+                        <input type="text" id="ldr-location" placeholder="দেশ / প্রবাস বা নম্বর" class="w-full px-3.5 py-2 rounded-xl border border-sky-300 bg-emerald-50/60 text-sm outline-none">
+                    </div>
+                    <button type="submit" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2.5 px-4 rounded-xl text-sm">
+                        তালিকায় যুক্ত করুন
+                    </button>
+                </form>
+            </div>
+
+            <!-- দায়িত্বশীলদের কার্ড গ্রিড -->
+            <div id="leaders-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- প্রধান কার্ড: প্রতিষ্ঠাতা ও প্রধান উপদেষ্টা -->
+                <div class="card-elevated bg-gradient-to-br from-emerald-950 via-emerald-900 to-blue-950 text-white rounded-3xl p-6 border-2 border-amber-400/60 shadow-lg">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-bold bg-amber-400 text-slate-950 px-3 py-1 rounded-full">প্রতিষ্ঠাতা ও প্রধান উপদেষ্টা</span>
+                        <i class="fa-solid fa-award text-amber-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-2">হযরত মাওলানা আবু নাইম সাহেব</h3>
+                    <p class="text-xs sm:text-sm text-emerald-100/90 mt-2 leading-relaxed">
+                        প্রতিষ্ঠালগ্ন থেকে সংগঠনের নৈতিক দিকনির্দেশনা, আদর্শ ও মানবকল্যাণমূলক কার্যক্রম বাস্তবায়নে অভিভাবকসুলভ নেতৃত্ব প্রদান করছেন।
+                    </p>
+                    <div class="mt-4 pt-3 border-t border-white/15 text-xs text-amber-200 flex items-center gap-1.5">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>৩ নং চরমোহনা, দক্ষিণ রায়পুর, রায়পুর, লক্ষ্মীপুর</span>
+                    </div>
+                </div>
+
+                <!-- দেশীয় কার্যকরী পরিষদ -->
+                <div class="card-elevated bg-amber-50/95 rounded-3xl p-6 border border-amber-200 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-bold bg-amber-200 text-amber-950 px-3 py-1 rounded-full">দেশীয় দায়িত্বশীল পরিষদ</span>
+                        <i class="fa-solid fa-people-carry-box text-amber-700 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mt-2">মাঠপর্যায় ও সমাজকল্যাণ সমন্বয়কবৃন্দ</h3>
+                    <p class="text-xs sm:text-sm text-slate-700 mt-2 leading-relaxed">
+                        দেশে অবস্থানরত নিবেদিতপ্রাণ দায়িত্বশীল সদস্যবৃন্দ—যারা সরাসরি চিকিৎসা সহায়তা, শিক্ষা উপকরণ বিতরণ ও জরুরি ত্রাণ কার্যক্রম পরিচালনা করেন।
+                    </p>
+                    <div class="mt-4 pt-3 border-t border-amber-200 text-xs text-amber-900 font-semibold flex items-center gap-1.5">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>যোগাযোগ (হোয়াটসঅ্যাপ): 01615-975515</span>
+                    </div>
+                </div>
+
+                <!-- প্রবাসী সমন্বয় পরিষদ -->
+                <div class="card-elevated bg-sky-50/95 rounded-3xl p-6 border border-sky-200 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-bold bg-sky-200 text-blue-950 px-3 py-1 rounded-full">প্রবাসী দায়িত্বশীল পরিষদ</span>
+                        <i class="fa-solid fa-globe text-blue-700 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mt-2">প্রবাসী প্রতিনিধি ও তহবিল সমন্বয়কবৃন্দ</h3>
+                    <p class="text-xs sm:text-sm text-slate-700 mt-2 leading-relaxed">
+                        বিশ্বের বিভিন্ন দেশে অবস্থানরত সম্মানিত প্রবাসী ভাইয়েরা—যারা নিয়মিত মাসিক তহবিল ও পরামর্শের মাধ্যমে সংগঠনের কার্যক্রমকে গতিশীল রাখছেন।
+                    </p>
+                    <div class="mt-4 pt-3 border-t border-sky-200 text-xs text-blue-900 font-semibold flex items-center gap-1.5">
+                        <i class="fa-solid fa-handshake"></i>
+                        <span>অনলাইন ও ডিজিটাল সমন্বয় টিম</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ৫. ভবিষ্যৎ পরিকল্পনা ও চ্যালেঞ্জ -->
+    <section id="vision" class="py-16 sm:py-20 warm-tinted-bg border-t border-amber-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-12">
+                <span class="inline-block bg-emerald-800 text-amber-200 text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">৫. ভবিষ্যৎ পরিকল্পনা ও চ্যালেঞ্জ সংক্রান্ত</span>
+                <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mt-3">চ্যালেঞ্জ মোকাবিলা ও আগামী ৫–১০ বছরের রূপরেখা</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- ৫.১ চ্যালেঞ্জ ও মোকাবিলার উপায় -->
+                <div class="bg-amber-50/95 rounded-3xl p-6 sm:p-8 border border-amber-200 shadow-sm">
+                    <span class="text-xs font-bold text-rose-700">১. সেবামূলক সংগঠন পরিচালনায় চ্যালেঞ্জ ও তা মোকাবিলার উপায়</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-4">সম্ভাব্য চ্যালেঞ্জসমূহ</h3>
+
+                    <ul class="space-y-3 text-sm sm:text-base text-slate-700 mb-6">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-exclamation text-amber-600 mt-1"></i>
+                            <span><strong>তহবিলের সীমাবদ্ধতা:</strong> সমাজে সাহায্যের চাহিদা অনেক বেশি, কিন্তু আমাদের তহবিল সীমিত।</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-exclamation text-amber-600 mt-1"></i>
+                            <span><strong>সদস্যদের সক্রিয়তা ও সমন্বয়:</strong> দেশ ও প্রবাসের সদস্যরা সবাই নিজ নিজ কর্মব্যস্ততার মধ্যে থাকেন, ফলে সবার সময় ও মতামত একসাথে সমন্বয় করা কখনো কখনো চ্যালেঞ্জিং হয়ে দাঁড়ায়।</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-exclamation text-amber-600 mt-1"></i>
+                            <span><strong>ভুল বোঝাবুঝি বা নেতিবাচকতা:</strong> ভালো কাজ করতে গেলে অনেক সময় অকারণ সমালোচনা বা ভুল বোঝাবুঝির মুখোমুখি হতে হয়।</span>
+                        </li>
+                    </ul>
+
+                    <div class="bg-emerald-100/90 rounded-2xl p-5 border border-emerald-300">
+                        <h4 class="font-bold text-emerald-950 text-base mb-1.5 flex items-center gap-2">
+                            <i class="fa-solid fa-check-double text-emerald-700"></i>
+                            <span>আমাদের মোকাবিলার উপায়</span>
+                        </h4>
+                        <p class="text-slate-800 text-sm leading-relaxed">
+                            আমরা এই চ্যালেঞ্জগুলো মোকাবিলা করি <strong>সততা, স্বচ্ছতা এবং সম্মিলিত পরামর্শের</strong> মাধ্যমে। প্রতিটি টাকার হিসাব পরিষ্কার রাখা, নিয়মিত অনলাইন ও অফলাইন বৈঠকের মাধ্যমে সদস্যদের জবাবদিহিতা নিশ্চিত করা এবং যেকোনো সিদ্ধান্ত এককভাবে না নিয়ে সবার মতামতের ভিত্তিতে গ্রহণ করার ফলে আমাদের ভেতরের ঐক্য আরও মজবুত হয়েছে।
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ৫.২ আগামী ৫ বা ১০ বছরে আল-মুনতাসির সংগঠনের অবস্থান ও ভবিষ্যৎ পরিকল্পনা -->
+                <div class="bg-sky-50/95 rounded-3xl p-6 sm:p-8 border border-sky-200 shadow-sm">
+                    <span class="text-xs font-bold text-blue-800">২. আগামী ৫ বা ১০ বছরে আল-মুনতাসির সংগঠনের অবস্থান ও ভবিষ্যৎ পরিকল্পনা</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">স্থায়ী, সুপ্রতিষ্ঠিত ও নির্ভরযোগ্য মানবিক প্রতিষ্ঠান</h3>
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed mb-5">
+                        আগামী ৫ থেকে ১০ বছরের মধ্যে আমরা আল-মুনতাসির সংগঠনকে একটি স্থায়ী, সুপ্রতিষ্ঠিত এবং নির্ভরযোগ্য মানবিক প্রতিষ্ঠান হিসেবে দেখতে চাই—যার ওপর বিপদগ্রস্ত মানুষ নিশ্চিন্তে ভরসা করতে পারবে।
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-3.5">
+                        <div class="p-4 rounded-2xl bg-emerald-100/80 border border-emerald-200">
+                            <div class="font-bold text-emerald-950 text-sm mb-1">স্থায়ী সেবামূলক তহবিল গঠন</div>
+                            <p class="text-xs sm:text-sm text-slate-700">যেন জরুরি প্রয়োজনে অর্থের অভাবে কোনো অসহায় মানুষের চিকিৎসা বা সহায়তা আটকে না থাকে।</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-amber-100/80 border border-amber-200">
+                            <div class="font-bold text-amber-950 text-sm mb-1">শিক্ষা ও দক্ষতা উন্নয়ন প্রকল্প</div>
+                            <p class="text-xs sm:text-sm text-slate-700">দরিদ্র ও মেধাবী শিক্ষার্থীদের জন্য নিয়মিত শিক্ষাবৃত্তি এবং তরুণদের নৈতিক ও কারিগরি দক্ষতা বৃদ্ধির উদ্যোগ নেওয়া।</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-teal-100/80 border border-teal-200">
+                            <div class="font-bold text-teal-950 text-sm mb-1">টেকসই মানবিক উদ্যোগ</div>
+                            <p class="text-xs sm:text-sm text-slate-700">কেবল সাময়িক সাহায্য নয়, বরং অসহায় পরিবারগুলোকে স্বাবলম্বী করে গড়ে তোলার মতো দীর্ঘমেয়াদী প্রকল্প গ্রহণ করা।</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-indigo-100/80 border border-indigo-200">
+                            <div class="font-bold text-indigo-950 text-sm mb-1">বৃহত্তর ঐক্য ও নেটওয়ার্ক</div>
+                            <p class="text-xs sm:text-sm text-slate-700">দেশ ও প্রবাসের আরও বেশি নিবেদিতপ্রাণ মানুষকে সাথে নিয়ে এলাকার গণ্ডি পেরিয়ে বৃহত্তর পরিসরে মানবতার সেবা ছড়িয়ে দেওয়া।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ৬. সমাজ ও যুবসমাজকে বার্তা -->
+    <section id="youth" class="py-16 sm:py-20 sky-tinted-bg border-t border-sky-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-12">
+                <span class="inline-block bg-amber-500 text-slate-950 text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">৬. সমাজ ও যুবসমাজকে বার্তা</span>
+                <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mt-3">যুবসমাজের জাগরণ ও প্রতিষ্ঠাতা ও প্রধান উপদেষ্টার আহ্বান</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8">
+                <div class="lg:col-span-5 bg-emerald-50/95 rounded-3xl p-6 sm:p-7 border border-emerald-200 shadow-sm">
+                    <span class="text-xs font-bold text-emerald-800">১. যুবসমাজকে নিয়ে সচেতনতামূলক ও শিক্ষামূলক উদ্যোগ</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">যুবসমাজই যেকোনো সমাজ ও জাতির প্রাণশক্তি</h3>
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed mb-4">
+                        বর্তমান প্রজন্মের যুবসমাজই যেকোনো সমাজ ও জাতির প্রাণশক্তি। আমরা বিশ্বাস করি, যুবকদের সঠিক পথে পরিচালিত করতে পারলে সমাজের অনেক সমস্যারই সমাধান সম্ভব। তাই যুবসমাজকে নিয়ে আমাদের ভাবনা ও উদ্যোগের মূল জায়গাগুলো হলো:
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="bg-amber-50/90 p-3.5 rounded-2xl border border-amber-200">
+                            <strong class="text-amber-950 block">নৈতিক ও মানবিক চেতনা জাগ্রত করা:</strong>
+                            <span>তরুণদের দায়িত্বশীল নাগরিক ও মানবিক মানুষ হিসেবে গড়ে উঠতে উদ্বুদ্ধ করা।</span>
+                        </li>
+                        <li class="bg-sky-50/90 p-3.5 rounded-2xl border border-sky-200">
+                            <strong class="text-blue-950 block">সচেতনতামূলক কার্যক্রম:</strong>
+                            <span>সমাজের নানা অসংগতি, কুসংস্কার বা ক্ষতিকর প্রবণতা থেকে তরুণদের দূরে রেখে ইতিবাচক ও গঠনমূলক কাজে যুক্ত করা।</span>
+                        </li>
+                        <li class="bg-teal-50/90 p-3.5 rounded-2xl border border-teal-200">
+                            <strong class="text-teal-950 block">শিক্ষা ও আত্মোন্নয়নে উৎসাহ:</strong>
+                            <span>পড়াশোনার পাশাপাশি দক্ষতা অর্জন ও কল্যাণমূলক কাজে অংশগ্রহণের মাধ্যমে নিজেদের যোগ্য করে তোলার অনুপ্রেরণা দেওয়া।</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-7 bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-800 text-white rounded-3xl p-6 sm:p-8 shadow-xl">
+                    <span class="text-xs font-bold text-amber-300">২. সমাজের বিত্তবান ও তরুণদের প্রতি আহ্বান</span>
+                    <h3 class="text-xl sm:text-2xl font-bold mt-1 mb-4">প্রতিষ্ঠাতা ও প্রধান উপদেষ্টার আন্তরিক আহ্বান</h3>
+
+                    <div class="space-y-5 text-sm sm:text-base leading-relaxed text-emerald-50">
+                        <div class="bg-white/10 rounded-2xl p-4 sm:p-5 border border-white/15">
+                            <h4 class="font-bold text-amber-300 mb-1.5"><i class="fa-solid fa-fire mr-1.5"></i> তরুণদের প্রতি আহ্বান:</h4>
+                            <p>
+                                সময় ও শক্তি নষ্ট না করে মানবতার কল্যাণে এগিয়ে আসুন। আপনার সামান্য সময়, সদিচ্ছা বা একটুখানি শ্রমও কারও জীবনে বড় পরিবর্তন আনতে পারে। কল্যাণমূলক কাজের সাথে যুক্ত থাকুন, নিজেকে আলোকিত করুন এবং সমাজকেও আলোকিত করুন।
+                            </p>
+                        </div>
+
+                        <div class="bg-white/10 rounded-2xl p-4 sm:p-5 border border-white/15">
+                            <h4 class="font-bold text-amber-300 mb-1.5"><i class="fa-solid fa-hand-holding-heart mr-1.5"></i> বিত্তবান ও সামর্থ্যবানদের প্রতি আহ্বান:</h4>
+                            <p>
+                                মহান আল্লাহ আমাদের যে সামর্থ্য ও সম্পদ দিয়েছেন, তার একটি অংশ সমাজের অসহায়, অসুস্থ ও পিছিয়ে পড়া মানুষের কল্যাণে ব্যয় করুন। আপনার সামান্য সহযোগিতা কোনো অসহায় পরিবারের মুখে হাসি ফোটাতে পারে, কোনো শিক্ষার্থীর পড়াশোনা বাঁচাতে পারে কিংবা কোনো রোগীর জীবন রক্ষা করতে পারে। আসুন, আমরা সবাই মিলে মানবতা, ভ্রাতৃত্ব ও দায়িত্ববোধের জায়গা থেকে একসাথে কাজ করি—যাতে একটি সুন্দর, সহানুভূতিশীল ও আদর্শ সমাজ গড়ে ওঠে।
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ৭ ও ৮. সংগঠনের কার্যক্রমের পিক (ছবি) এবং সংগঠনের ভিডিও -->
+    <section id="gallery-media" class="py-16 sm:py-20 warm-tinted-bg border-t border-emerald-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+            <!-- অংশ ৭: সংগঠনের কার্যক্রমের পিক (ছবি) -->
+            <div>
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+                    <div>
+                        <span class="inline-block bg-sky-700 text-white text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">
+                            <i class="fa-solid fa-images mr-1"></i> ৭. সংগঠনের কার্যক্রমের পিক
+                        </span>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mt-2.5">মানবিক ও সামাজিক কার্যক্রমের স্থিরচিত্র</h2>
+                        <p class="text-slate-700 text-sm sm:text-base mt-1">
+                            আল মুনতাসির সংগঠনের সেবামূলক কার্যক্রমের ছবি দেখুন এবং নতুন ছবিও যুক্ত করুন।
+                        </p>
+                    </div>
+                    <label class="cursor-pointer bg-emerald-700 hover:bg-emerald-800 text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow transition-colors inline-flex items-center gap-2 shrink-0 no-print">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <span>কার্যক্রমের ছবি যুক্ত করুন</span>
+                        <input type="file" id="photo-upload-input" accept="image/*" class="hidden" onchange="handlePhotoUpload(event)">
+                    </label>
+                </div>
+
+                <div id="activity-photos-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card-elevated bg-emerald-50/95 rounded-3xl overflow-hidden border border-emerald-200 shadow-sm">
+                        <img src="https://placehold.co/640x400/064e3b/fde047?text=%E0%A6%9C%E0%A6%B0%E0%A7%81%E0%A6%B0%E0%A6%BF+%E0%A6%9A%E0%A6%BF%E0%A6%95%E0%A6%BF%E0%A7%8E%E0%A6%B8%E0%A6%BE+%E0%A6%B8%E0%A6%B9%E0%A6%BE%E0%A7%9F%E0%A6%A4%E0%A6%BE" alt="জরুরি চিকিৎসা সহায়তা" onerror="this.src='https://placehold.co/640x400/065f46/ffffff?text=Medical+Aid'" class="w-full h-48 object-cover">
+                        <div class="p-5">
+                            <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-full">মানবিক সহায়তা</span>
+                            <h3 class="font-bold text-slate-900 text-base mt-2">অসহায় রোগীদের জরুরি চিকিৎসা সহায়তা প্রদান</h3>
+                            <p class="text-xs sm:text-sm text-slate-600 mt-1">৩ নং চরমোহনা, রায়পুর, লক্ষ্মীপুর ও আশপাশের অসহায় পরিবারের পাশে দাঁড়ানোর মুহূর্ত।</p>
+                        </div>
+                    </div>
+
+                    <div class="card-elevated bg-sky-50/95 rounded-3xl overflow-hidden border border-sky-200 shadow-sm">
+                        <img src="https://placehold.co/640x400/1e3a8a/fef08a?text=%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE+%E0%A6%89%E0%A6%AA%E0%A6%95%E0%A6%B0%E0%A6%A3+%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A6%B0%E0%A6%A3" alt="শিক্ষা উপকরণ বিতরণ" onerror="this.src='https://placehold.co/640x400/1e40af/ffffff?text=Education+Support'" class="w-full h-48 object-cover">
+                        <div class="p-5">
+                            <span class="text-xs font-bold text-blue-800 bg-blue-100 px-2.5 py-0.5 rounded-full">শিক্ষা প্রকল্প</span>
+                            <h3 class="font-bold text-slate-900 text-base mt-2">দরিদ্র ও মেধাবী শিক্ষার্থীদের শিক্ষা উপকরণ বিতরণ</h3>
+                            <p class="text-xs sm:text-sm text-slate-600 mt-1">শিক্ষার্থীদের পড়াশোনা এগিয়ে নিতে শিক্ষা উপকরণ ও আর্থিক সহায়তা কর্মসূচি।</p>
+                        </div>
+                    </div>
+
+                    <div class="card-elevated bg-teal-50/95 rounded-3xl overflow-hidden border border-teal-200 shadow-sm">
+                        <img src="https://placehold.co/640x400/0f293a/6ee7b7?text=%E0%A6%96%E0%A6%BE%E0%A6%A6%E0%A7%8D%E0%A6%AF+%E0%A6%93+%E0%A6%88%E0%A6%A6+%E0%A6%89%E0%A6%AA%E0%A6%B9%E0%A6%BE%E0%A6%B0" alt="খাদ্য ও ঈদ উপহার সামগ্রী" onerror="this.src='https://placehold.co/640x400/0f172a/ffffff?text=Relief+Distribution'" class="w-full h-48 object-cover">
+                        <div class="p-5">
+                            <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-0.5 rounded-full">সামাজিক কল্যাণ</span>
+                            <h3 class="font-bold text-slate-900 text-base mt-2">অসহায় পরিবারের মাঝে খাদ্য ও বিশেষ উপহার বিতরণ</h3>
+                            <p class="text-xs sm:text-sm text-slate-600 mt-1">দেশ ও প্রবাসের সদস্যদের সম্মিলিত তহবিল থেকে মানবিক উপহার পৌঁছে দেওয়া।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- অংশ ৮: সংগঠনের ভিডিও -->
+            <div id="org-videos" class="pt-10 border-t border-emerald-200/80">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+                    <div>
+                        <span class="inline-block bg-blue-900 text-amber-300 text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">
+                            <i class="fa-solid fa-circle-play mr-1"></i> ৮. সংগঠনের ভিডিও
+                        </span>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mt-2.5">কার্যক্রম, সভা ও সচেতনতামূলক ভিডিও</h2>
+                        <p class="text-slate-700 text-sm sm:text-base mt-1">
+                            সংগঠনের কার্যক্রম ও আলোচনা বিষয়ক ভিডিও দেখুন বা নতুন ভিডিও লিংক যুক্ত করুন।
+                        </p>
+                    </div>
+                    <button type="button" onclick="toggleVideoAddForm()" class="bg-blue-900 hover:bg-blue-800 text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow transition-colors inline-flex items-center gap-2 shrink-0 no-print">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>নতুন ভিডিও যুক্ত করুন</span>
+                    </button>
+                </div>
+
+                <!-- নতুন ভিডিও যোগ করার ফর্ম -->
+                <div id="video-add-box" class="hidden mb-6 bg-sky-50/95 border border-sky-200 rounded-2xl p-5 no-print">
+                    <form id="add-video-form" class="grid sm:grid-cols-3 gap-3 items-end">
+                        <div>
+                            <label for="vid-title" class="block text-xs font-bold text-slate-700 mb-1">ভিডিওর শিরোনাম *</label>
+                            <input type="text" id="vid-title" required placeholder="যেমন: ত্রাণ বিতরণ ও আলোচনা সভা" class="w-full px-3.5 py-2 rounded-xl border border-sky-300 bg-emerald-50/60 text-sm outline-none">
+                        </div>
+                        <div>
+                            <label for="vid-url" class="block text-xs font-bold text-slate-700 mb-1">YouTube বা ভিডিও লিংক *</label>
+                            <input type="url" id="vid-url" required placeholder="https://www.youtube.com/watch?v=..." class="w-full px-3.5 py-2 rounded-xl border border-sky-300 bg-emerald-50/60 text-sm outline-none">
+                        </div>
+                        <button type="submit" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2.5 px-4 rounded-xl text-sm">
+                            ভিডিও তালিকায় যুক্ত করুন
+                        </button>
+                    </form>
+                </div>
+
+                <div id="org-videos-grid" class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-blue-950 text-white rounded-3xl overflow-hidden border border-blue-800 shadow-md">
+                        <div class="relative bg-gradient-to-br from-slate-900 via-blue-950 to-emerald-950 p-6 sm:p-8 flex flex-col justify-between min-h-[210px]">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold bg-amber-400/20 text-amber-300 border border-amber-400/40 px-3 py-1 rounded-full">পরিচিতি ও লক্ষ্য</span>
+                                <i class="fa-solid fa-video text-sky-300 text-xl"></i>
+                            </div>
+                            <div class="my-4">
+                                <h3 class="text-lg sm:text-xl font-bold text-white">আল মুনতাসির সংগঠনের প্রতিষ্ঠা ও মানবিক লক্ষ্য</h3>
+                                <p class="text-xs sm:text-sm text-blue-200 mt-1">হযরত মাওলানা আবু নাইম সাহেবের দিকনির্দেশনায় আমাদের মানবিক যাত্রা।</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-3 border-t border-white/15">
+                                <span class="text-xs text-emerald-300"><i class="fa-solid fa-location-dot mr-1"></i>৩ নং চরমোহনা, রায়পুর, লক্ষ্মীপুর</span>
+                                <a href="#about" class="bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs px-3.5 py-1.5 rounded-lg transition-colors">
+                                    বিস্তারিত দেখুন
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-emerald-950 text-white rounded-3xl overflow-hidden border border-emerald-800 shadow-md">
+                        <div class="relative bg-gradient-to-br from-emerald-950 via-teal-950 to-slate-900 p-6 sm:p-8 flex flex-col justify-between min-h-[210px]">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold bg-emerald-400/20 text-emerald-300 border border-emerald-400/40 px-3 py-1 rounded-full">মাঠপর্যায়ের সেবা</span>
+                                <i class="fa-solid fa-film text-amber-300 text-xl"></i>
+                            </div>
+                            <div class="my-4">
+                                <h3 class="text-lg sm:text-xl font-bold text-white">এনায়েত ফান্ড ও মানবিক সহায়তা কার্যক্রমের প্রতিবেদন</h3>
+                                <p class="text-xs sm:text-sm text-emerald-200 mt-1">দেশ ও প্রবাসের ভাইদের সহযোগিতায় পরিচালিত সেবামূলক প্রজেক্টের ভিডিও চিত্র।</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-3 border-t border-white/15">
+                                <span class="text-xs text-amber-300"><i class="fa-solid fa-hand-holding-heart mr-1"></i>এনায়েত ফান্ড প্রজেক্ট</span>
+                                <a href="#activities" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs px-3.5 py-1.5 rounded-lg transition-colors">
+                                    কার্যক্রম দেখুন
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ৯. শরীয়তের মাসআলা ও মাসায়েল -->
+    <section id="masala" class="py-16 sm:py-20 soft-mint-bg border-t border-emerald-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-10">
+                <span class="inline-block bg-emerald-700 text-white text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">
+                    <i class="fa-solid fa-mosque mr-1"></i> ৯. শরীয়তের মাসআলা ও মাসায়েল
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mt-3">শরীয়তের মাসআলা, সমাধান ও জিজ্ঞাসাবাদ</h2>
+                <p class="text-slate-700 text-sm sm:text-base mt-2 leading-relaxed">
+                    দৈনন্দিন জীবনের জরুরি শরয়ী মাসআলা-মাসায়েল জানুন এবং নামাজ, রোজা, যাকাত-সাদাকাহ বা লেনদেন সংক্রান্ত কোনো প্রশ্ন থাকলে সরাসরি নিচে লিখে জমা দিন ও হোয়াটসঅ্যাপে পাঠান।
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-5 mb-10">
+                <div class="bg-emerald-100/85 rounded-2xl p-5 border border-emerald-300 shadow-sm">
+                    <span class="text-xs font-bold bg-emerald-800 text-white px-2.5 py-0.5 rounded-full">যাকাত ও সাদাকাহ</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2.5">সাদাকাহ ও মানবিক তহবিলের ফযীলত</h3>
+                    <p class="text-xs sm:text-sm text-slate-700 mt-1.5 leading-relaxed">
+                        <strong>মাসআলা:</strong> নফল সাদাকাহ ও সাধারণ অনুদানের অর্থ এলাকার দরিদ্র, অসুস্থ রোগী, এতিম ও অসহায় শিক্ষার্থীদের কল্যাণে ব্যয় করা সম্পূর্ণ শরীয়তসম্মত এবং সাদাকায়ে জারিয়ার অন্তর্ভুক্ত।
+                    </p>
+                </div>
+
+                <div class="bg-amber-100/85 rounded-2xl p-5 border border-amber-300 shadow-sm">
+                    <span class="text-xs font-bold bg-amber-700 text-white px-2.5 py-0.5 rounded-full">যাকাত বণ্টন</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2.5">যাকাতের অর্থ প্রদানের সঠিক খাত</h3>
+                    <p class="text-xs sm:text-sm text-slate-700 mt-1.5 leading-relaxed">
+                        <strong>মাসআলা:</strong> যাকাতের অর্থ কেবল শরীয়ত নির্ধারিত অভাবগ্রস্ত ও নেসাব পরিমাণ সম্পদের মালিক নন—এমন দরিদ্র মুসলিম ব্যক্তিকে মালিক বানিয়ে দিতে হবে।
+                    </p>
+                </div>
+
+                <div class="bg-sky-100/85 rounded-2xl p-5 border border-sky-300 shadow-sm">
+                    <span class="text-xs font-bold bg-blue-900 text-white px-2.5 py-0.5 rounded-full">আমানত ও স্বচ্ছতা</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2.5">সামাজিক সংগঠনের তহবিল সংরক্ষণ</h3>
+                    <p class="text-xs sm:text-sm text-slate-700 mt-1.5 leading-relaxed">
+                        <strong>মাসআলা:</strong> জনকল্যাণের উদ্দেশ্যে সংগৃহীত তহবিল দায়িত্বশীলদের নিকট একটি পবিত্র আমানত। দাতাদের নির্ধারিত খাতে স্বচ্ছতার সাথে তা ব্যয় করা ওয়াজিব।
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <!-- মাসআলা জিজ্ঞাসাবাদ ফর্ম -->
+                <div class="lg:col-span-7 bg-sky-50/95 rounded-3xl p-6 sm:p-8 border border-sky-200 shadow-sm no-print">
+                    <form id="masala-form" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="masala-category" class="block text-sm font-bold text-slate-700 mb-1">মাসআলার বিষয় <span class="text-red-500">*</span></label>
+                                <select id="masala-category" class="w-full px-4 py-2.5 rounded-xl border border-sky-300 focus:ring-2 focus:ring-emerald-600 outline-none bg-emerald-50/70 text-sm">
+                                    <option value="নামাজ ও সালাত">নামাজ ও সালাত</option>
+                                    <option value="রোজা ও সিয়াম">রোজা ও সিয়াম</option>
+                                    <option value="যাকাত ও সাদাকাহ">যাকাত ও সাদাকাহ</option>
+                                    <option value="পারিবারিক ও সামাজিক">পারিবারিক ও সামাজিক</option>
+                                    <option value="ক্রয়-বিক্রয় ও লেনদেন">ক্রয়-বিক্রয় ও লেনদেন</option>
+                                    <option value="সাধারণ মাসআলা">সাধারণ মাসআলা</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="masala-asker" class="block text-sm font-bold text-slate-700 mb-1">প্রশ্নকারীর নাম / ছদ্মনাম (ঐচ্ছিক)</label>
+                                <input type="text" id="masala-asker" placeholder="নাম লিখুন বা অপ্রকাশিত রাখুন" class="w-full px-4 py-2.5 rounded-xl border border-sky-300 focus:ring-2 focus:ring-emerald-600 outline-none bg-emerald-50/70 text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="masala-question" class="block text-sm font-bold text-slate-700 mb-1">আপনার শরয়ী প্রশ্ন / মাসআলা বিস্তারিত লিখুন <span class="text-red-500">*</span></label>
+                            <textarea id="masala-question" rows="4" required placeholder="আপনার জিজ্ঞাসাটি পরিষ্কার ও সংক্ষেপে লিখুন..." class="w-full px-4 py-3 rounded-xl border border-sky-300 focus:ring-2 focus:ring-emerald-600 outline-none bg-emerald-50/70 text-sm"></textarea>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-3 pt-1">
+                            <button type="submit" class="flex-1 bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3 px-5 rounded-xl shadow transition-all text-sm flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-base"></i>
+                                <span>মাসআলা জমা দিন ও হোয়াটসঅ্যাপে পাঠান</span>
+                            </button>
+                            <button type="button" onclick="copyMasalaText()" class="bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold py-3 px-4 rounded-xl transition-all text-sm flex items-center justify-center gap-2">
+                                <i class="fa-regular fa-copy"></i>
+                                <span>প্রশ্ন কপি করুন</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- নির্দেশিকা ও জমা হওয়া মাসআলা তালিকা -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="bg-amber-50/95 rounded-2xl p-5 border border-amber-200 shadow-sm">
+                        <h4 class="font-bold text-amber-950 text-base mb-1.5 flex items-center gap-2">
+                            <i class="fa-solid fa-circle-info text-amber-700"></i>
+                            <span>জিজ্ঞাসাবাদ নির্দেশিকা</span>
+                        </h4>
+                        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                            শরয়ী মাসআলা জানার ক্ষেত্রে সংশ্লিষ্ট ঘটনার বাস্তব অবস্থা ও শর্তগুলো পরিষ্কারভাবে উল্লেখ করা প্রয়োজন। বিজ্ঞ আলেম/মুফতি সাহেবগণের পর্যালোচনার আলোকে শরয়ী সমাধান প্রদান করা হয়।
+                        </p>
+                    </div>
+
+                    <div class="bg-emerald-50/95 rounded-2xl p-5 border border-emerald-200 shadow-sm">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-bold text-slate-900 text-base">জমা হওয়া মাসআলা তালিকা</h4>
+                            <span id="masala-count" class="text-xs bg-emerald-700 text-white font-bold px-2.5 py-0.5 rounded-full">১টি নমুনা</span>
+                        </div>
+                        <div id="masala-list" class="space-y-3 max-h-80 overflow-y-auto pr-1">
+                            <div class="p-3.5 rounded-xl bg-sky-50/90 border border-sky-200 text-sm">
+                                <div class="flex items-center justify-between text-xs mb-1">
+                                    <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">যাকাত ও সাদাকাহ</span>
+                                    <span class="text-slate-500">নমুনা জিজ্ঞাসা</span>
+                                </div>
+                                <p class="text-slate-800 font-medium">অসহায় ও দরিদ্র শিক্ষার্থীদের শিক্ষা উপকরণ এবং জরুরি চিকিৎসা সহায়তায় কি নফল সাদাকাহ বা এনায়েত ফান্ডের অর্থ ব্যয় করা যায়?</p>
+                                <p class="text-xs text-slate-600 mt-1.5">নোট: দরিদ্র ও অভাবগ্রস্তদের কল্যাণে নফল সাদাকাহ ও অনুদানের অর্থ ব্যয় করা শরীয়তসম্মত ও অত্যন্ত সওয়াবের কাজ।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ১০. সংগঠন কেন্দ্রিক প্রশ্ন ও উত্তর (FAQ) -->
+    <section id="faq" class="py-16 sm:py-20 sky-tinted-bg border-t border-sky-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="inline-block bg-blue-900 text-amber-300 text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">১০. সংগঠন কেন্দ্রিক প্রশ্ন ও উত্তর</span>
+                <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mt-3">সাধারণ জিজ্ঞাসা ও উত্তরমালা</h2>
+                <p class="text-slate-700 text-sm sm:text-base mt-2">
+                    আল মুনতাসির সংগঠন সম্পর্কে গুরুত্বপূর্ণ প্রশ্ন ও তার উত্তর নিচে দেওয়া হলো।
+                </p>
+            </div>
+
+            <div id="faq-container" class="space-y-3.5"></div>
+        </div>
+    </section>
+
+    <!-- ১১. অভিযোগ বক্স (অটো হোয়াটসঅ্যাপ 01615-975515 যুক্ত) -->
+    <section id="complaint-box" class="py-16 sm:py-20 bg-gradient-to-b from-rose-50 via-amber-50/70 to-emerald-50 border-t border-rose-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-10">
+                <span class="inline-block bg-rose-700 text-white text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">
+                    <i class="fa-solid fa-box-archive mr-1"></i> ১১. অভিযোগ বক্স
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mt-3">আপনার অভিযোগ, পরামর্শ বা মতামত জানান</h2>
+                <p class="text-slate-700 text-sm sm:text-base mt-2 leading-relaxed">
+                    সংগঠনের কার্যক্রম, তহবিল ব্যবস্থাপনা, আচরণগত বিষয় বা যেকোনো অসংগতি সম্পর্কে আপনার অভিযোগ বা গঠনমূলক পরামর্শ নিচের অভিযোগ বক্সে জমা দিন। জমা দেওয়ার সাথে সাথে তা অটো-হোয়াটসঅ্যাপে (<strong>01615-975515</strong>) পাঠানোর অপশন চালু হবে।
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <!-- অভিযোগ জমা ফর্ম -->
+                <div class="lg:col-span-7 bg-rose-50/90 rounded-3xl p-6 sm:p-8 border-2 border-rose-200 shadow-sm no-print">
+                    <form id="complaint-form" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="cmp-name" class="block text-sm font-bold text-slate-700 mb-1">অভিযোগকারীর নাম (ঐচ্ছিক)</label>
+                                <input type="text" id="cmp-name" placeholder="নাম লিখুন বা গোপন রাখুন" class="w-full px-4 py-2.5 rounded-xl border border-rose-300 focus:ring-2 focus:ring-rose-600 outline-none bg-amber-50/70 text-sm">
+                            </div>
+                            <div>
+                                <label for="cmp-phone" class="block text-sm font-bold text-slate-700 mb-1">মোবাইল / হোয়াটসঅ্যাপ নম্বর (ঐচ্ছিক)</label>
+                                <input type="tel" id="cmp-phone" placeholder="01XXXXXXXXX" class="w-full px-4 py-2.5 rounded-xl border border-rose-300 focus:ring-2 focus:ring-rose-600 outline-none bg-amber-50/70 text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="cmp-category" class="block text-sm font-bold text-slate-700 mb-1">অভিযোগ / পরামর্শের ধরন <span class="text-red-500">*</span></label>
+                            <select id="cmp-category" required class="w-full px-4 py-2.5 rounded-xl border border-rose-300 focus:ring-2 focus:ring-rose-600 outline-none bg-amber-50/70 text-sm">
+                                <option value="কার্যক্রম সংক্রান্ত অভিযোগ">কার্যক্রম সংক্রান্ত অভিযোগ</option>
+                                <option value="তহবিল ও হিসাব সংক্রান্ত">তহবিল ও হিসাব সংক্রান্ত</option>
+                                <option value="সদস্য বা দায়িত্বশীল সংক্রান্ত">সদস্য বা দায়িত্বশীল সংক্রান্ত</option>
+                                <option value="জরুরি মানবিক সহায়তার আবেদন">জরুরি মানবিক সহায়তার আবেদন</option>
+                                <option value="উন্নয়নমূলক পরামর্শ">উন্নয়নমূলক পরামর্শ</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="cmp-details" class="block text-sm font-bold text-slate-700 mb-1">অভিযোগের বিস্তারিত বিবরণ <span class="text-red-500">*</span></label>
+                            <textarea id="cmp-details" rows="4" required placeholder="আপনার অভিযোগ বা পরামর্শটি পরিষ্কারভাবে লিখুন..." class="w-full px-4 py-3 rounded-xl border border-rose-300 focus:ring-2 focus:ring-rose-600 outline-none bg-amber-50/70 text-sm"></textarea>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-3 pt-1">
+                            <button type="submit" class="flex-1 bg-rose-700 hover:bg-rose-800 text-white font-bold py-3.5 px-5 rounded-xl shadow transition-all text-sm sm:text-base flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>অভিযোগ জমা দিন ও হোয়াটসঅ্যাপে পাঠান</span>
+                            </button>
+                            <button type="button" onclick="copyLastComplaint()" class="bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 px-4 rounded-xl transition-all text-sm flex items-center justify-center gap-2">
+                                <i class="fa-regular fa-copy"></i>
+                                <span>কপি করুন</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- জমা হওয়া অভিযোগের তালিকা ও নীতিমালা -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="bg-emerald-950 text-white rounded-3xl p-5 sm:p-6 shadow-md">
+                        <h4 class="font-bold text-amber-300 text-base mb-1.5 flex items-center gap-2">
+                            <i class="fa-solid fa-user-shield"></i>
+                            <span>গোপনীয়তা ও জবাবদিহিতার নিশ্চয়তা</span>
+                        </h4>
+                        <p class="text-xs sm:text-sm text-emerald-100 leading-relaxed">
+                            অভিযোগকারীর নাম ও পরিচয় সম্পূর্ণ গোপন রাখা হয়। প্রতিটি অভিযোগ প্রতিষ্ঠাতা ও প্রধান উপদেষ্টা <strong>হযরত মাওলানা আবু নাইম সাহেব</strong> এবং দায়িত্বশীল পরিষদের মাধ্যমে গুরুত্বের সাথে পর্যালোচনা করা হয়।
+                        </p>
+                        <div class="mt-3 pt-3 border-t border-white/15 flex items-center justify-between text-xs">
+                            <span class="text-emerald-200">সরাসরি হোয়াটসঅ্যাপ হেল্পলাইন:</span>
+                            <a href="https://wa.me/8801615975515" target="_blank" rel="noopener noreferrer" class="font-mono font-bold text-amber-300 underline">01615-975515</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-50/95 rounded-3xl p-5 border border-amber-200 shadow-sm">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-bold text-slate-900 text-base">সাম্প্রতিক জমা হওয়া অভিযোগ</h4>
+                            <span id="complaint-count" class="text-xs bg-rose-700 text-white font-bold px-2.5 py-0.5 rounded-full">০টি</span>
+                        </div>
+                        <div id="complaint-list" class="space-y-2.5 max-h-64 overflow-y-auto pr-1 text-xs sm:text-sm text-slate-600">
+                            <p class="italic text-slate-500">এখনো কোনো অভিযোগ জমা দেওয়া হয়নি।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ১২. বিকাশ পেমেন্ট অপশন (নিচে) -->
+    <section id="bkash-payment" class="py-16 sm:py-20 warm-tinted-bg border-t border-pink-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-pink-50/95 border-2 border-bkash-500/35 rounded-3xl p-6 sm:p-8 shadow-md flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                <div class="space-y-2">
+                    <span class="inline-flex items-center gap-2 bg-bkash-500 text-white text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>১২. বিকাশ পেমেন্ট অপশন</span>
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">
+                        বিকাশে টাকা পাঠানোর মাধ্যম — এনায়েত ফান্ড ও অনুদান
+                    </h2>
+                    <p class="text-slate-700 text-sm sm:text-base max-w-2xl">
+                        প্রবাসী ভাইদের মাসিক <strong>৫০০ টাকা</strong>, দেশী সদস্যদের মাসিক <strong>২০০ টাকা</strong> অথবা যেকোনো মানবিক সহায়তা নিচের বিকাশ নম্বরে পাঠানো যাবে।
+                    </p>
+                </div>
+
+                <div class="bg-emerald-50/95 border border-pink-200 rounded-2xl p-4 sm:p-5 shrink-0 shadow-sm">
+                    <div class="text-xs font-bold text-bkash-700">বিকাশ (Personal / Send Money)</div>
+                    <div class="text-lg sm:text-xl font-bold text-slate-900">আল মুনতাসির সংগঠন তহবিল</div>
+                    <div class="flex items-center gap-2.5 mt-1">
+                        <span class="font-mono text-xl sm:text-2xl font-extrabold text-bkash-600 tracking-wide">01624-507765</span>
+                        <button type="button" onclick="copyText('01624507765', 'বিকাশ নম্বর (01624-507765)')" class="bg-bkash-500 hover:bg-bkash-600 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition-colors no-print">
+                            <i class="fa-regular fa-copy mr-1"></i> কপি
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 mt-8 items-start">
+                <!-- বাম পাশ: বিকাশ নম্বর কার্ড ও নিয়ম -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="bg-bkash-500 text-white rounded-3xl p-6 shadow-lg relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs uppercase tracking-wider font-bold bg-white/20 px-3 py-1 rounded-full">bKash Official</span>
+                            <i class="fa-solid fa-shield-check text-pink-200 text-xl"></i>
+                        </div>
+                        <div class="text-sm text-pink-100">সংগঠনের বিকাশ তহবিল</div>
+                        <div class="text-xl font-bold mt-0.5">আল মুনতাসির সংগঠন</div>
+                        <div class="mt-4 pt-4 border-t border-white/20 flex items-center justify-between gap-2">
+                            <div>
+                                <div class="text-xs text-pink-100">বিকাশ নম্বর</div>
+                                <div class="font-mono text-2xl font-extrabold tracking-wider">01624-507765</div>
+                            </div>
+                            <button type="button" onclick="copyText('01624507765', 'বিকাশ নম্বর (01624-507765)')" class="bg-pink-50 text-bkash-700 hover:bg-pink-100 font-bold text-xs px-3.5 py-2.5 rounded-xl shadow transition-colors no-print">
+                                <i class="fa-regular fa-copy mr-1"></i> নম্বর কপি
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-sky-50/95 rounded-3xl p-5 border border-sky-200 space-y-2.5 text-xs sm:text-sm text-slate-700">
+                        <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-list-check text-bkash-500"></i>
+                            <span>বিকাশে টাকা পাঠানোর সহজ নিয়ম</span>
+                        </h4>
+                        <p>১. আপনার বিকাশ অ্যাপ থেকে <strong>Send Money</strong> অপশনে যান।</p>
+                        <p>২. প্রাপক নম্বর হিসেবে <strong>01624-507765</strong> দিন।</p>
+                        <p>৩. রেফারেন্সে আপনার নাম বা <strong>Enayet Fund</strong> লিখে টাকা পাঠান।</p>
+                        <p>৪. টাকা পাঠানোর পর ডান পাশের ফর্মে <strong>Transaction ID (TrxID)</strong> দিয়ে তথ্য সংরক্ষণ করুন।</p>
+                    </div>
+                </div>
+
+                <!-- ডান পাশ: বিকাশ পেমেন্ট নিশ্চিতকরণ ফর্ম -->
+                <div class="lg:col-span-7 bg-emerald-50/95 rounded-3xl p-6 sm:p-8 border border-emerald-200 shadow-sm no-print">
+                    <h3 class="text-xl font-bold text-slate-900 mb-1">বিকাশ পেমেন্ট নিশ্চিতকরণ ও স্লিপ</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 mb-5">
+                        বিকাশে টাকা পাঠানোর পর TrxID ও বিবরণ লিখে নিচে সংরক্ষণ করুন।
+                    </p>
+
+                    <form id="bkash-confirm-form" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="bk-sender-name" class="block text-sm font-bold text-slate-700 mb-1">প্রেরকের নাম <span class="text-red-500">*</span></label>
+                                <input type="text" id="bk-sender-name" required placeholder="আপনার নাম লিখুন" class="w-full px-4 py-2.5 rounded-xl border border-emerald-300 focus:ring-2 focus:ring-bkash-500 outline-none bg-amber-50/60 text-sm">
+                            </div>
+                            <div>
+                                <label for="bk-sender-num" class="block text-sm font-bold text-slate-700 mb-1">যে বিকাশ নম্বর থেকে টাকা পাঠিয়েছেন <span class="text-red-500">*</span></label>
+                                <input type="tel" id="bk-sender-num" required placeholder="01XXXXXXXXX" class="w-full px-4 py-2.5 rounded-xl border border-emerald-300 focus:ring-2 focus:ring-bkash-500 outline-none bg-amber-50/60 text-sm">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-3 gap-4">
+                            <div>
+                                <label for="bk-amount" class="block text-sm font-bold text-slate-700 mb-1">টাকার পরিমাণ (৳) <span class="text-red-500">*</span></label>
+                                <input type="number" id="bk-amount" required min="10" placeholder="যেমন: ৫০০ বা ২০০" class="w-full px-4 py-2.5 rounded-xl border border-emerald-300 focus:ring-2 focus:ring-bkash-500 outline-none bg-amber-50/60 text-sm font-bold">
+                            </div>
+                            <div>
+                                <label for="bk-purpose" class="block text-sm font-bold text-slate-700 mb-1">অনুদানের খাত</label>
+                                <select id="bk-purpose" class="w-full px-3.5 py-2.5 rounded-xl border border-emerald-300 focus:ring-2 focus:ring-bkash-500 outline-none bg-amber-50/60 text-sm">
+                                    <option value="এনায়েত ফান্ড (প্রবাসী ৫০০৳)">এনায়েত ফান্ড (প্রবাসী ৫০০৳)</option>
+                                    <option value="এনায়েত ফান্ড (দেশী ২০০৳)">এনায়েত ফান্ড (দেশী ২০০৳)</option>
+                                    <option value="জরুরি চিকিৎসা ও মানবিক সহায়তা">জরুরি চিকিৎসা ও মানবিক সহায়তা</option>
+                                    <option value="শিক্ষা ও কল্যাণ তহবিল">শিক্ষা ও কল্যাণ তহবিল</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="bk-trxid" class="block text-sm font-bold text-slate-700 mb-1">Transaction ID (TrxID) <span class="text-red-500">*</span></label>
+                                <input type="text" id="bk-trxid" required placeholder="যেমন: 9ABC12XY3Z" class="w-full px-4 py-2.5 rounded-xl border border-emerald-300 focus:ring-2 focus:ring-bkash-500 outline-none bg-amber-50/60 text-sm font-mono uppercase">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full bg-bkash-500 hover:bg-bkash-600 text-white font-bold py-3.5 rounded-xl shadow transition-all text-sm sm:text-base flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-receipt"></i>
+                            <span>বিকাশ পেমেন্ট তথ্য সংরক্ষণ করুন</span>
+                        </button>
+                    </form>
+
+                    <!-- পেমেন্ট স্লিপ প্রিভিউ -->
+                    <div id="bkash-slip-box" class="hidden mt-5 bg-pink-100/80 border border-pink-300 rounded-2xl p-4 sm:p-5">
+                        <div class="flex items-center justify-between border-b border-pink-200 pb-2 mb-2.5">
+                            <span class="text-xs font-extrabold text-bkash-700">বিকাশ অনুদান নিশ্চিতকরণ স্লিপ</span>
+                            <span id="slip-ref-code" class="text-xs font-mono font-bold text-slate-700"></span>
+                        </div>
+                        <div id="slip-details" class="text-xs sm:text-sm text-slate-800 space-y-1"></div>
+                        <div class="mt-3 pt-2.5 border-t border-pink-200 flex gap-2 no-print">
+                            <button type="button" onclick="copyBkashSlip()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition-colors">
+                                <i class="fa-regular fa-copy mr-1"></i> স্লিপ কপি করে সংরক্ষণ করুন
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ১৩. সদস্য লিংক ও সদস্য নিবন্ধন ফর্ম (ক্রমিক সংখ্যা ০০১, ০০২, ০০৩ এবং অটো পরিচিতি পর্ব ডাউনলোড ও অটো হোয়াটসঅ্যাপসহ) -->
+    <section id="member-link" class="py-16 sm:py-24 soft-mint-bg border-t border-emerald-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-10">
+                <div>
+                    <span class="inline-block bg-emerald-700 text-white text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">
+                        <i class="fa-solid fa-link mr-1"></i> ১৩. সদস্য লিংক ও সদস্য নিবন্ধন ফর্ম
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mt-3">নতুন সদস্য নিবন্ধন ফর্ম</h2>
+                    <p class="text-slate-700 text-sm sm:text-base mt-1.5">
+                        ফর্ম পূরণ করলে <strong>০০১, ০০২, ০০৩...</strong> ক্রমিক সংখ্যা দেওয়া হবে, <strong>পরিচিতি পর্ব</strong> অটো ডাউনলোড হবে এবং অটো-হোয়াটসঅ্যাপে (<strong>01615-975515</strong>) যুক্ত হবে।
+                    </p>
+                </div>
+
+                <!-- শেয়ারযোগ্য সদস্য লিংক বক্স -->
+                <div class="bg-sky-50 border border-emerald-300 rounded-xl p-3 flex items-center gap-2 shadow-sm max-w-full no-print">
+                    <span class="text-xs font-bold text-emerald-800 shrink-0"><i class="fa-solid fa-share-nodes"></i> সদস্য লিংক:</span>
+                    <input type="text" id="share-member-url" readonly class="text-xs text-slate-700 bg-amber-50 px-2.5 py-1.5 rounded-lg border border-slate-200 w-44 sm:w-64 outline-none">
+                    <button type="button" onclick="copyMemberLink()" class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-1.5 rounded-lg shrink-0 transition-colors">
+                        লিংক কপি
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <!-- সদস্য নিবন্ধন ফর্ম -->
+                <div class="lg:col-span-7 bg-sky-50/95 rounded-3xl p-6 sm:p-8 border border-sky-200 shadow-md no-print">
+                    <form id="member-registration-form" class="space-y-5">
+                        <!-- নাম ও বাবা -->
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="m-name" class="block text-sm font-bold text-slate-700 mb-1">নাম <span class="text-red-500">*</span></label>
+                                <input type="text" id="m-name" required placeholder="আবেদনকারীর পূর্ণ নাম" class="w-full px-4 py-2.5 rounded-xl border border-sky-300 focus:ring-2 focus:ring-emerald-600 outline-none bg-emerald-50/60 text-sm">
+                            </div>
+                            <div>
+                                <label for="m-father" class="block text-sm font-bold text-slate-700 mb-1">বাবা <span class="text-red-500">*</span></label>
+                                <input type="text" id="m-father" required placeholder="পিতার নাম লিখুন" class="w-full px-4 py-2.5 rounded-xl border border-sky-300 focus:ring-2 focus:ring-emerald-600 outline-none bg-emerald-50/60 text-sm">
+                            </div>
+                        </div>
+
+                        <!-- মোবাইল ও হোয়াটসঅ্যাপ -->
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="m-mobile" class="block text-sm font-bold text-slate-700 mb-1">মোবাইল <span class="text-red-500">*</span></label>
+                                <input type="tel" id="m-mobile" required placeholder="01XXXXXXXXX" class="w-full px-4 py-2.5 rounded-xl border border-sky-300 focus:ring-2 focus:ring-emerald-600 outline-none bg-emerald-50/60 text-sm">
+                            </div>
+                            <div>
+                                <label for="m-whatsapp" class="block text-sm font-bold text-slate-700 mb-1">হোয়াটসঅ্যাপ <span class="text-red-500">*</span></label>
+                                <input type="tel" id="m-whatsapp" required placeholder="হোয়াটসঅ্যাপ নম্বর" class="w-full px-4 py-2.5 rounded-xl border border-sky-300 focus:ring-2 focus:ring-emerald-600 outline-none bg-emerald-50/60 text-sm">
+                            </div>
+                        </div>
+
+                        <!-- ঠিকানা: ৮ বিভাগ -> ৬৪ জেলা -> থানা/উপজেলা -->
+                        <div class="bg-emerald-50/90 p-4 sm:p-5 rounded-2xl border border-emerald-200 space-y-4">
+                            <div class="text-sm font-bold text-emerald-950 flex items-center gap-2">
+                                <i class="fa-solid fa-map-location-dot text-emerald-700"></i>
+                                <span>ঠিকানা (৮ বিভাগ, ৬৪ জেলা ও থানা/উপজেলা)</span>
+                            </div>
+
+                            <div class="grid sm:grid-cols-3 gap-3.5">
+                                <div>
+                                    <label for="m-division" class="block text-xs font-bold text-slate-700 mb-1">বিভাগ (৮টি) <span class="text-red-500">*</span></label>
+                                    <select id="m-division" required class="w-full px-3 py-2.5 rounded-xl border border-emerald-300 focus:ring-2 focus:ring-emerald-600 outline-none bg-amber-50/70 text-sm">
+                                        <option value="">বিভাগ নির্বাচন করুন</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="m-district" class="block text-xs font-bold text-slate-700 mb-1">জেলা (৬৪টি) <span class="text-red-500">*</span></label>
+                                    <select id="m-district" required disabled class="w-full px-3 py-2.5 rounded-xl border border-emerald-300 focus:ring-2 focus:ring-emerald-600 outline-none bg-amber-50/70 text-sm disabled:opacity-60">
+                                        <option value="">আগে বিভাগ দিন</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="m-thana" class="block text-xs font-bold text-slate-700 mb-1">থানা / উপজেলা <span class="text-red-500">*</span></label>
+                                    <select id="m-thana" required disabled class="w-full px-3 py-2.5 rounded-xl border border-emerald-300 focus:ring-2 focus:ring-emerald-600 outline-none bg-amber-50/70 text-sm disabled:opacity-60">
+                                        <option value="">আগে জেলা দিন</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="m-village" class="block text-xs font-bold text-slate-700 mb-1">বিস্তারিত ঠিকানা (গ্রাম / ওয়ার্ড / বাড়ি) <span class="text-red-500">*</span></label>
+                                <input type="text" id="m-village" required placeholder="যেমন: ৩ নং চরমোহনা, ৬নং ওয়ার্ড, দক্ষিণ রায়পুর" class="w-full px-4 py-2.5 rounded-xl border border-emerald-300 focus:ring-2 focus:ring-emerald-600 outline-none bg-amber-50/70 text-sm">
+                            </div>
+                        </div>
+
+                        <!-- বর্তমান ঠিকানা: বাংলাদেশ অথবা কোন দেশী প্রবাসী -->
+                        <div class="bg-amber-100/80 p-4 sm:p-5 rounded-2xl border border-amber-300 space-y-3.5">
+                            <label class="block text-sm font-bold text-slate-900">
+                                বর্তমান ঠিকানা <span class="text-red-500">*</span>
+                            </label>
+
+                            <div class="flex flex-wrap gap-4">
+                                <label class="inline-flex items-center gap-2 cursor-pointer bg-emerald-50 px-4 py-2.5 rounded-xl border border-emerald-300 text-sm font-semibold text-slate-800">
+                                    <input type="radio" name="currentResidence" value="বাংলাদেশ" checked onchange="toggleExpatriateField()" class="accent-emerald-700 w-4 h-4">
+                                    <span>বাংলাদেশ</span>
+                                </label>
+                                <label class="inline-flex items-center gap-2 cursor-pointer bg-emerald-50 px-4 py-2.5 rounded-xl border border-emerald-300 text-sm font-semibold text-slate-800">
+                                    <input type="radio" name="currentResidence" value="প্রবাসী" onchange="toggleExpatriateField()" class="accent-emerald-700 w-4 h-4">
+                                    <span>প্রবাসী</span>
+                                </label>
+                            </div>
+
+                            <div id="expatriate-country-box" class="hidden pt-1">
+                                <label for="m-country" class="block text-xs font-bold text-amber-950 mb-1">
+                                    কোন দেশী প্রবাসী? (দেশের নাম) <span class="text-red-500">*</span>
+                                </label>
+                                <select id="m-country" onchange="handleCountryChange()" class="w-full px-4 py-2.5 rounded-xl border border-amber-400 focus:ring-2 focus:ring-amber-500 outline-none bg-emerald-50 text-sm">
+                                    <option value="">দেশ নির্বাচন করুন</option>
+                                    <option value="সৌদি আরব">সৌদি আরব</option>
+                                    <option value="সংযুক্ত আরব আমিরাত">সংযুক্ত আরব আমিরাত</option>
+                                    <option value="কাতার">কাতার</option>
+                                    <option value="ওমান">ওমান</option>
+                                    <option value="কুয়েত">কুয়েত</option>
+                                    <option value="বাহরাইন">বাহরাইন</option>
+                                    <option value="মালয়েশিয়া">মালয়েশিয়া</option>
+                                    <option value="সিঙ্গাপুর">সিঙ্গাপুর</option>
+                                    <option value="ইতালি">ইতালি</option>
+                                    <option value="যুক্তরাজ্য">যুক্তরাজ্য</option>
+                                    <option value="যুক্তরাষ্ট্র">যুক্তরাষ্ট্র</option>
+                                    <option value="অন্যান্য দেশ">অন্যান্য দেশ</option>
+                                </select>
+                                <input type="text" id="m-country-other" placeholder="দেশের নাম লিখুন" class="hidden mt-2 w-full px-4 py-2 rounded-xl border border-amber-400 text-sm bg-emerald-50">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl shadow-lg transition-all text-base flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>সদস্য আবেদন জমা দিন ও পরিচিতি পর্ব ডাউনলোড করুন</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- সদস্য আবেদন ও অটো পরিচিতি পর্ব কার্ড -->
+                <div class="lg:col-span-5">
+                    <div id="member-receipt-card" class="bg-gradient-to-br from-blue-950 via-emerald-950 to-slate-900 text-white rounded-3xl p-6 sm:p-7 border-2 border-amber-400/50 shadow-xl">
+                        <div class="flex items-center justify-between border-b border-white/15 pb-4 mb-4">
+                            <div>
+                                <span class="text-xs font-bold text-amber-300">অটো পরিচিতি পর্ব ও সদস্য কার্ড</span>
+                                <h3 class="text-lg font-bold text-white">আল মুনতাসির সংগঠন</h3>
+                                <div class="text-[11px] text-sky-300 font-latin">AL MUNTASIR ORGANIZATION • <span class="font-arabic text-sm text-amber-300">المؤسسة المنتصر</span></div>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <span id="receipt-badge" class="text-xs bg-amber-400/20 text-amber-300 border border-amber-400/40 font-bold px-3 py-1 rounded-full block">অপেক্ষমাণ</span>
+                                <span class="text-[11px] text-emerald-300 font-bold mt-1 block">পরবর্তী ক্রমিক: <span id="next-serial-preview" class="font-mono text-amber-300">০০১</span></span>
+                            </div>
+                        </div>
+
+                        <!-- অটো পরিচিতি পর্ব অনুচ্ছেদ -->
+                        <div id="auto-intro-box" class="bg-white/10 border border-white/15 rounded-2xl p-4 mb-4 text-xs sm:text-sm leading-relaxed text-emerald-50">
+                            সদস্য নিবন্ধন ফর্ম পূরণ করে জমা দেওয়ার সাথে সাথে এখানে সদস্যের <strong>ক্রমিক সংখ্যা (০০১, ০০২, ০০৩...)</strong> সহ একটি পূর্ণাঙ্গ <strong>পরিচিতি পর্ব</strong> অটো তৈরি হয়ে যাবে এবং ডাউনলোড হবে।
+                        </div>
+
+                        <div class="space-y-2 text-xs sm:text-sm text-emerald-100">
+                            <div class="flex justify-between gap-2"><span class="text-sky-200">ক্রমিক সংখ্যা:</span><strong id="r-id" class="text-amber-300 text-right font-mono text-base">—</strong></div>
+                            <div class="flex justify-between gap-2"><span class="text-sky-200">নাম:</span><strong id="r-name" class="text-white text-right">—</strong></div>
+                            <div class="flex justify-between gap-2"><span class="text-sky-200">বাবা:</span><strong id="r-father" class="text-white text-right">—</strong></div>
+                            <div class="flex justify-between gap-2"><span class="text-sky-200">মোবাইল:</span><strong id="r-mobile" class="text-white text-right">—</strong></div>
+                            <div class="flex justify-between gap-2"><span class="text-sky-200">হোয়াটসঅ্যাপ:</span><strong id="r-whatsapp" class="text-white text-right">—</strong></div>
+                            <div class="pt-2 border-t border-white/15">
+                                <span class="text-sky-200 block text-xs">ঠিকানা (বিভাগ / জেলা / থানা / বিস্তারিত):</span>
+                                <strong id="r-address" class="text-white text-xs sm:text-sm block mt-0.5">—</strong>
+                            </div>
+                            <div class="pt-2 border-t border-white/15 flex justify-between gap-2">
+                                <span class="text-sky-200">বর্তমান ঠিকানা:</span>
+                                <strong id="r-residence" class="text-amber-300 text-right">—</strong>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 pt-4 border-t border-white/15 flex flex-wrap gap-2 no-print">
+                            <button type="button" onclick="downloadMemberIntroCard()" class="flex-1 bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold py-2.5 px-3 rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow">
+                                <i class="fa-solid fa-download"></i>
+                                <span>পরিচিতি ডাউনলোড</span>
+                            </button>
+                            <button type="button" onclick="sendMemberToWhatsApp()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold py-2.5 px-3 rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>হোয়াটসঅ্যাপ</span>
+                            </button>
+                            <button type="button" onclick="copyReceiptSummary()" class="bg-white/15 hover:bg-white/25 text-white text-xs font-bold py-2.5 px-3 rounded-xl transition-colors flex items-center justify-center gap-1.5">
+                                <i class="fa-regular fa-copy"></i>
+                                <span>কপি</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ফুটার -->
+    <footer class="bg-blue-950 text-blue-100 pt-12 pb-16 border-t border-blue-900 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 pb-8 border-b border-blue-800/80">
+                <div>
+                    <div class="text-lg font-bold text-white">আল মুনতাসির সংগঠন</div>
+                    <div class="font-latin text-xs font-bold text-sky-300 tracking-wider mt-0.5">AL MUNTASIR ORGANIZATION</div>
+                    <div class="font-arabic text-xl text-amber-300 mt-1">المؤسسة المنتصر</div>
+                    <p class="text-xs sm:text-sm text-blue-200/80 mt-2.5 leading-relaxed">
+                        স্থাপিত: ২৪ সেপ্টেম্বর ২০২৪, বুধবার, মাগরিবের নামাজের পর। অবস্থান: ৩ নং চরমোহনা, ৬নং ওয়ার্ড, দক্ষিণ রায়পুর, রায়পুর, লক্ষ্মীপুর।
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3">গুরুত্বপূর্ণ সেকশনসমূহ</h4>
+                    <ul class="space-y-1.5 text-xs sm:text-sm text-blue-200/85">
+                        <li><a href="#about" class="hover:text-amber-300">১. পরিচিতি ও পটভূমি</a></li>
+                        <li><a href="#activities" class="hover:text-amber-300">২. কার্যক্রম ও এনায়েত ফান্ড</a></li>
+                        <li><a href="#leaders" class="hover:text-amber-300">৪. সংগঠনের দায়িত্বশীলগন</a></li>
+                        <li><a href="#gallery-media" class="hover:text-amber-300">৭ ও ৮. কার্যক্রমের পিক ও ভিডিও</a></li>
+                        <li><a href="#masala" class="hover:text-amber-300">৯. শরীয়তে মাসআলা</a></li>
+                        <li><a href="#complaint-box" class="hover:text-rose-300">১১. অভিযোগ বক্স</a></li>
+                        <li><a href="#bkash-payment" class="hover:text-pink-300">১২. বিকাশ পেমেন্ট অপশন</a></li>
+                        <li><a href="#member-link" class="hover:text-amber-300">১৩. সদস্য লিংক ও পরিচিতি ডাউনলোড</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3">নেতৃত্ব, অবস্থান ও অটো হোয়াটসঅ্যাপ</h4>
+                    <p class="text-xs sm:text-sm text-blue-200/85 leading-relaxed">
+                        <strong class="text-white">প্রতিষ্ঠাতা ও প্রধান উপদেষ্টা:</strong> হযরত মাওলানা আবু নাইম সাহেব<br>
+                        <strong class="text-white">অবস্থান:</strong> ৩ নং চরমোহনা, ৬নং ওয়ার্ড, দক্ষিণ রায়পুর, রায়পুর, লক্ষ্মীপুর।<br>
+                        <strong class="text-emerald-300">অটো হোয়াটসঅ্যাপ:</strong> <a href="https://wa.me/8801615975515" target="_blank" rel="noopener noreferrer" class="underline text-amber-300 font-mono">01615-975515</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-blue-300/75 gap-2">
+                <p>© ২০২৪–২০২৬ আল মুনতাসির সংগঠন (AL MUNTASIR ORGANIZATION) • المؤسسة المنتصر</p>
+                <p>শতভাগ অরাজনৈতিক, অলাভজনক, মানবিক ও শিক্ষামূলক উদ্যোগ</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- সম্পূর্ণ জাভাস্ক্রিপ্ট লজিক -->
+    <script>
+        // =========================================================================
+        // ১. অটো হোয়াটসঅ্যাপ নম্বর (01615-975515)
+        // =========================================================================
+        const ORG_WHATSAPP_NUMBER = "8801615975515";
+
+        function openAutoWhatsApp(textMessage) {
+            const encoded = encodeURIComponent(textMessage);
+            const waUrl = `https://wa.me/${ORG_WHATSAPP_NUMBER}?text=${encoded}`;
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
+        }
+
+        // =========================================================================
+        // ২. বাংলাদেশের ৮ বিভাগ, ৬৪ জেলা ও থানা/উপজেলার তালিকা
+        // =========================================================================
+        const BD_GEO_DATA = {
+            "বরিশাল": {
+                "বরিশাল": ["বরিশাল সদর", "বাকেরগঞ্জ", "বাবুগঞ্জ", "উজিরপুর", "বানারীপাড়া", "গৌরনদী", "আগৈলঝাড়া", "মেহেন্দিগঞ্জ", "মুলাদী", "হিজলা"],
+                "বরগুনা": ["বরগুনা সদর", "আমতলী", "তালতলী", "পাথরঘাটা", "বামনা", "বেতাগী"],
+                "ভোলা": ["ভোলা সদর", "দৌলতখান", "বোরহানউদ্দিন", "তজুমুদ্দিন", "লালমোহন", "চরফ্যাশন", "মনপুরা"],
+                "ঝালকাঠি": ["ঝালকাঠি সদর", "নলছিটি", "রাজাপুর", "কাঁঠালিয়া"],
+                "পটুয়াখালী": ["পটুয়াখালী সদর", "বাউফল", "দুমকি", "দশমিনা", "গলাচিপা", "কলাপাড়া", "মির্জাগঞ্জ", "রাঙ্গাবালী"],
+                "পিরোজপুর": ["পিরোজপুর সদর", "ইন্দুরকানী (জিয়ানগর)", "কাউখালী", "নাজিরপুর", "নেছারাবাদ (স্বরূপকাঠি)", "ভান্ডারিয়া", "মঠবাড়িয়া"]
+            },
+            "চট্টগ্রাম": {
+                "চট্টগ্রাম": ["কোতোয়ালী (চট্টগ্রাম)", "ডবলমুরিং", "পাহাড়তলী", "পাঁচলাইশ", "বন্দর", "চান্দগাঁও", "সীতাকুণ্ড", "মীরসরাই", "সন্দ্বীপ", "ফটিকছড়ি", "হাটহাজারী", "রাউজান", "রাঙ্গুনিয়া", "বোয়ালখালী", "পটিয়া", "চন্দনাইশ", "সাতকানিয়া", "লোহাগাড়া", "বাঁশখালী", "কর্ণফুলী"],
+                "কক্সবাজার": ["কক্সবাজার সদর", "রামু", "উখিয়া", "টেকনাফ", "চকরিয়া", "পেকুয়া", "মহেশখালী", "কুতুবদিয়া", "ঈদগাঁও"],
+                "কুমিল্লা": ["কুমিল্লা আদর্শ সদর", "কুমিল্লা সদর দক্ষিণ", "চৌদ্দগ্রাম", "লাকসাম", "মনোহরগঞ্জ", "নাঙ্গলকোট", "বরুড়া", "চান্দিনা", "দেবিদ্বার", "মুরাদনগর", "হোমনা", "মেঘনা", "দাউদকান্দি", "তিতাস", "বুড়িচং", "ব্রাহ্মণপাড়া", "লালমাই"],
+                "ব্রাহ্মণবাড়িয়া": ["ব্রাহ্মণবাড়িয়া সদর", "সরাইল", "আশুগঞ্জ", "নবীনগর", "বাঞ্ছারামপুর", "কসবা", "আখাউড়া", "বিজয়নগর", "নাসিরনগর"],
+                "চাঁদপুর": ["চাঁদপুর সদর", "হাইমচর", "মতলব উত্তর", "মতলব দক্ষিণ", "হাজীগঞ্জ", "শাহরাস্তি", "কচুয়া", "ফরিদগঞ্জ"],
+                "ফেনী": ["ফেনী সদর", "ছাগলনাইয়া", "পরশুরাম", "ফুলগাজী", "দাগনভূঞা", "সোনাগাজী"],
+                "লক্ষ্মীপুর": ["লক্ষ্মীপুর সদর", "রায়পুর", "রামগঞ্জ", "রামগতি", "কমলনগর"],
+                "নোয়াখালী": ["নোয়াখালী সদর", "বেগমগঞ্জ", "চাটখিল", "সোনাইমুড়ী", "সেনবাগ", "কোম্পানীগঞ্জ", "কবিরহাট", "হাতিয়া", "সুবর্ণচর"],
+                "বান্দরবান": ["বান্দরবান সদর", "রোয়াংছড়ি", "রুমা", "থানচি", "লামা", "আলীকদম", "নাইক্ষ্যংছড়ি"],
+                "খাগড়াছড়ি": ["খাগড়াছড়ি সদর", "দীঘিনালা", "পানছড়ি", "মহালছড়ি", "লক্ষ্মীছড়ি", "মাটিরাঙ্গা", "গুইমারা", "রামগড়", "মানিকছড়ি"],
+                "রাঙ্গামাটি": ["রাঙ্গামাটি সদর", "কাপ্তাই", "রাজস্থলী", "বিলাইছড়ি", "জুরাছড়ি", "বরকল", "বাঘাইছড়ি", "লংগদু", "নানিয়ারচর", "কাউখালী"]
+            },
+            "ঢাকা": {
+                "ঢাকা": ["ধানমন্ডি", "নিউমার্কেট", "কলাবাগান", "হাজারীবাগ", "লালবাগ", "চকবাজার", "কোতোয়ালী", "সূত্রাপুর", "ওয়ারী", "গেন্ডারিয়া", "শ্যামপুর", "যাত্রাবাড়ী", "ডেমরা", "সবুজবাগ", "মুগদা", "খিলগাঁও", "মতিঝিল", "পল্টন", "রমনা", "শাহবাগ", "তেজগাঁও", "তেজগাঁও শিল্পাঞ্চল", "মোহাম্মদপুর", "আদাবর", "মিরপুর", "শাহআলী", "দারুসসালাম", "কাফরুল", "ক্যান্টনমেন্ট", "গুলশান", "বনানী", "বাড্ডা", "খিলক্ষেত", "উত্তরা পূর্ব", "উত্তরা পশ্চিম", "দক্ষিণখান", "উত্তরখান", "তুরাগ", "ভাটারা", "সাভার", "ধামরাই", "কেরানীগঞ্জ", "নবাবগঞ্জ", "দোহার"],
+                "গাজীপুর": ["গাজীপুর সদর", "টঙ্গী", "কালিয়াকৈর", "শ্রীপুর", "কাপাসিয়া", "কালীগঞ্জ"],
+                "নারায়ণগঞ্জ": ["নারায়ণগঞ্জ সদর", "বন্দর", "রূপগঞ্জ", "আড়াইহাজার", "সোনারগাঁও", "সিদ্ধিরগঞ্জ", "ফতুল্লা"],
+                "নরসিংদী": ["নরসিংদী সদর", "পলাশ", "শিবপুর", "মনোহরদী", "বেলাবো", "রায়পুরা"],
+                "মানিকগঞ্জ": ["মানিকগঞ্জ সদর", "সিংগাইর", "সাটুরিয়া", "ঘিওর", "দৌলতপুর", "শিবালয়", "হরিরামপুর"],
+                "মুন্সীগঞ্জ": ["মুন্সীগঞ্জ সদর", "টঙ্গীবাড়ী", "লৌহজং", "শ্রীনগর", "সিরাজদীখান", "গজারিয়া"],
+                "কিশোরগঞ্জ": ["কিশোরগঞ্জ সদর", "হোসেনপুর", "পাকুন্দিয়া", "কটিয়াদী", "কুলিয়ারচর", "ভৈরব", "বাজিতপুর", "তাড়াইল", "করিমগঞ্জ", "ইটনা", "মিঠামইন", "অষ্টগ্রাম", "নিকলী"],
+                "টাঙ্গাইল": ["টাঙ্গাইল সদর", "দেলদুয়ার", "নাগরপুর", "মির্জাপুর", "বাসাইল", "সখিপুর", "ঘাটাইল", "কালিহাতী", "মধুপুর", "ধনবাড়ী", "গোপালপুর", "ভূঞাপুর"],
+                "ফরিদপুর": ["ফরিদপুর সদর", "মধুখালী", "বোয়ালমারী", "আলফাডাঙ্গা", "সালথা", "নগরকান্দা", "ভাঙ্গা", "সদরপুর", "চরভদ্রাসন"],
+                "গোপালগঞ্জ": ["গোপালগঞ্জ সদর", "কাশিয়ানী", "মুকসুদপুর", "কোটালীপাড়া", "টুঙ্গিপাড়া"],
+                "মাদারীপুর": ["মাদারীপুর সদর", "কালকিনি", "রাজৈর", "শিবচর", "ডাসার"],
+                "রাজবাড়ী": ["রাজবাড়ী সদর", "গোয়ালন্দ", "পাংশা", "বালিয়াকান্দি", "কালুখালী"],
+                "শরীয়তপুর": ["শরীয়তপুর সদর", "নড়িয়া", "ভেদরগঞ্জ", "ডামুড্যা", "গোসাইরহাট", "সখিপুর"]
+            },
+            "খুলনা": {
+                "খুলনা": ["খুলনা সদর", "সোনাডাঙ্গা", "খালিশপুর", "দৌলতপুর", "খানজাহান আলী", "রূপসা", "তেরখাদা", "দিঘলিয়া", "ফুলতলা", "ডুমুরিয়া", "বটিয়াঘাটা", "পাইকগাছা", "কয়রা"],
+                "বাগেরহাট": ["বাগেরহাট সদর", "ফকিরহাট", "মোল্লাহাট", "চিতলমারী", "কচুয়া", "রামপাল", "মোংলা", "মোরেলগঞ্জ", "শরণখোলা"],
+                "সাতক্ষীরা": ["সাতক্ষীরা সদর", "কলারোয়া", "তালা", "আশাশুনি", "দেবহাটা", "কালিগঞ্জ", "শ্যামনগর"],
+                "যশোর": ["যশোর সদর", "ঝিকরগাছা", "শার্শা", "চৌগাছা", "মনিরামপুর", "কেশবপুর", "অভয়নগর", "বাঘারপাড়া"],
+                "ঝিনাইদহ": ["ঝিনাইদহ সদর", "কালীগঞ্জ", "কোটচাঁদপুর", "মহেশপুর", "শৈলকুপা", "হরিণাকুণ্ডু"],
+                "মাগুরা": ["মাগুরা সদর", "শালিখা", "শ্রীপুর", "মহম্মদপুর"],
+                "নড়াইল": ["নড়াইল সদর", "কালিয়া", "লোহাগড়া"],
+                "কুষ্টিয়া": ["কুষ্টিয়া সদর", "কুমারখালী", "খোকসা", "মিরপুর", "ভেড়ামারা", "দৌলতপুর"],
+                "মেহেরপুর": ["মেহেরপুর সদর", "মুজিবনগর", "গাংনী"],
+                "চুয়াডাঙ্গা": ["চুয়াডাঙ্গা সদর", "আলমডাঙ্গা", "দামুড়হুদা", "জীবননগর"]
+            },
+            "ময়মনসিংহ": {
+                "ময়মনসিংহ": ["ময়মনসিংহ সদর", "মুক্তাগাছা", "ফুলবাড়িয়া", "ত্রিশাল", "ভালুকা", "গফরগাঁও", "নান্দাইল", "ঈশ্বরগঞ্জ", "গৌরীপুর", "হালুয়াঘাট", "ধোবাউড়া", "ফুলপুর", "তারাকান্দা"],
+                "জামালপুর": ["জামালপুর সদর", "সরিষাবাড়ী", "মেলান্দহ", "ইসলামপুর", "দেওয়ানগঞ্জ", "মাদারগঞ্জ", "বকশীগঞ্জ"],
+                "নেত্রকোণা": ["নেত্রকোণা সদর", "বারহাট্টা", "মোহনগঞ্জ", "মদন", "খালিয়াজুরি", "কেন্দুয়া", "আটপাড়া", "পূর্বধলা", "দুর্গাপুর", "কলমাকান্দা"],
+                "শেরপুর": ["শেরপুর সদর", "নকলা", "নালিতাবাড়ী", "শ্রীবরদী", "ঝিনাইগাতী"]
+            },
+            "রাজশাহী": {
+                "রাজশাহী": ["বোয়ালিয়া", "মতিহার", "রাজপাড়া", "শাহ মখদুম", "পবা", "দুর্গাপুর", "মোহনপুর", "তানোর", "গোদাগাড়ী", "পুঠিয়া", "বাগমারা", "চারঘাট", "বাঘা"],
+                "বগুড়া": ["বগুড়া সদর", "শাজাহানপুর", "শিবগঞ্জ", "সোনাতলা", "গাবতলী", "সারিয়াকান্দি", "কাহালু", "নন্দীগ্রাম", "দুপচাঁচিয়া", "আদমদীঘি", "শেরপুর", "ধুনট"],
+                "চাঁপাইনবাবগঞ্জ": ["চাঁপাইনবাবগঞ্জ সদর", "শিবগঞ্জ", "গোমস্তাপুর", "নাচোল", "ভোলাহাট"],
+                "নওগাঁ": ["নওগাঁ সদর", "মহাদেবপুর", "বদলগাছী", "ধামইরহাট", "পত্নীতলা", "সাপাহার", "পোরশা", "নিয়ামতপুর", "মান্দা", "আত্রাই", "রাণীনগর"],
+                "নাটোর": ["নাটোর সদর", "নলডাঙ্গা", "সিংড়া", "গুরুদাসপুর", "বড়াইগ্রাম", "বাগাতিপাড়া", "লালপুর"],
+                "পাবনা": ["পাবনা সদর", "আটঘরিয়া", "ঈশ্বরদী", "চাটমোহর", "ভাঙ্গুড়া", "ফরিদপুর", "বেড়া", "সাঁথিয়া", "সুজানগর"],
+                "সিরাজগঞ্জ": ["সিরাজগঞ্জ সদর", "কামারখন্দ", "বেলকুচি", "চৌহালী", "শাহজাদপুর", "উল্লাপাড়া", "তাড়াশ", "রায়গঞ্জ", "কাজীপুর"],
+                "জয়পুরহাট": ["জয়পুরহাট সদর", "আক্কেলপুর", "কালাই", "ক্ষেতলাল", "পাঁচবিবি"]
+            },
+            "রংপুর": {
+                "রংপুর": ["রংপুর সদর", "গঙ্গাচড়া", "তারাগঞ্জ", "বদরগঞ্জ", "মিঠাপুকুর", "পীরগঞ্জ", "পীরগাছা", "কাউনিয়া"],
+                "দিনাজপুর": ["দিনাজপুর সদর", "বিরল", "বোচাগঞ্জ", "কাহারোল", "খানসামা", "বীরগঞ্জ", "পার্বতীপুর", "ফুলবাড়ী", "নবাবগঞ্জ", "বিরামপুর", "হাকিমপুর", "ঘোড়াঘাট", "চিরিরবন্দর"],
+                "গাইবান্ধা": ["গাইবান্ধা সদর", "সাদুল্লাপুর", "সুন্দরগঞ্জ", "পলাশবাড়ী", "গোবিন্দগঞ্জ", "সাঘাটা", "ফুলছড়ি"],
+                "কুড়িগ্রাম": ["কুড়িগ্রাম সদর", "রাজারহাট", "উলিপুর", "চিলমারী", "রৌমারী", "রাজিবপুর", "নাগেশ্বরী", "ভুরুঙ্গামারী", "ফুলবাড়ী"],
+                "লালমনিরহাট": ["লালমনিরহাট সদর", "আদিতমারী", "কালীগঞ্জ", "হাতীবান্ধা", "পাটগ্রাম"],
+                "নীলফামারী": ["নীলফামারী সদর", "সৈয়দপুর", "কিশোরগঞ্জ", "জলঢাকা", "ডিমলা", "ডোমার"],
+                "পঞ্চগড়": ["পঞ্চগড় সদর", "তেঁতুলিয়া", "আটোয়ারী", "বোদা", "দেবীগঞ্জ"],
+                "ঠাকুরগাঁও": ["ঠাকুরগাঁও সদর", "বালিয়াডাঙ্গী", "হরিপুর", "রাণীশংকৈল", "পীরগঞ্জ"]
+            },
+            "সিলেট": {
+                "সিলেট": ["সিলেট সদর", "দক্ষিণ সুরমা", "ফেঞ্চুগঞ্জ", "বালাগঞ্জ", "ওসমানীনগর", "বিশ্বনাথ", "গোলাপগঞ্জ", "বিয়ানীবাজার", "জকিগঞ্জ", "কানাইঘাট", "জৈন্তাপুর", "গোয়াইনঘাট", "কোম্পানীগঞ্জ"],
+                "মৌলভীবাজার": ["মৌলভীবাজার সদর", "রাজনগর", "কমলগঞ্জ", "শ্রীমঙ্গল", "কুলাউড়া", "জুড়ী", "বড়লেখা"],
+                "হবিগঞ্জ": ["হবিগঞ্জ সদর", "শায়েস্তাগঞ্জ", "চুনারুঘাট", "মাধবপুর", "নবীগঞ্জ", "বাহুবল", "লাখাই", "বানিয়াচং", "আজমিরীগঞ্জ"],
+                "সুনামগঞ্জ": ["সুনামগঞ্জ সদর", "দক্ষিণ সুনামগঞ্জ (শান্তিগঞ্জ)", "জগন্নাথপুর", "ছাতক", "দোয়ারাবাজার", "বিশ্বম্ভরপুর", "তাহিরপুর", "জামালগঞ্জ", "ধর্মপাশা", "মধ্যনগর", "শাল্লা"]
+            }
+        };
+
+        // =========================================================================
+        // ৩. সংগঠন কেন্দ্রিক প্রশ্ন ও উত্তর (FAQ)
+        // =========================================================================
+        const FAQ_ITEMS = [
+            {
+                q: "১. 'আল-মুনতাসির' নামকরণের অর্থ ও তাৎপর্য কী?",
+                a: "'আল-মুনতাসির' (المنتصر) একটি আরবি শব্দ, যার অর্থ 'বিজয়ী' বা 'সাহায্যপ্রাপ্ত'। অন্যায়, অজ্ঞতা ও দারিদ্র্যের বিরুদ্ধে মানবতার বিজয় নিশ্চিত করা এবং অসহায় ও পিছিয়ে পড়া মানুষের মুখে হাসি ফোটানোই এর মূল তাৎপর্য।"
+            },
+            {
+                q: "২. সংগঠনটি কবে, কোথায় এবং কার নেতৃত্বে প্রতিষ্ঠিত হয়?",
+                a: "আল-মুনতাসির সংগঠন ২০২৪ সালের ২৪ সেপ্টেম্বর, বুধবার, মাগরিবের নামাজের পর মোল্লাবাড়ি সংলগ্ন ব্যাপারি বাড়ির কাচারিতে (স্থান: ৩ নং চরমোহনা, রায়পুর, লক্ষ্মীপুর) প্রতিষ্ঠিত হয়। হযরত মাওলানা আবু নাইম সাহেবের হাত ধরে এবং দিকনির্দেশনায় এর শুভ সূচনা হয়।"
+            },
+            {
+                q: "৩. আল-মুনতাসির সংগঠনের রাজনৈতিক অবস্থান কী?",
+                a: "এটি শতভাগ অরাজনৈতিক, অলাভজনক এবং মানবিক ও শিক্ষামূলক সামাজিক সংগঠন। এর কোনো রাজনৈতিক এজেন্ডা বা ব্যক্তিগত স্বার্থ নেই।"
+            },
+            {
+                q: "৪. এনায়েত ফান্ডে মাসিক অনুদানের হার কত টাকা?",
+                a: "এনায়েত ফান্ডে প্রবাসী ভাইদের জন্য মাসিক অনুদান ৫০০ টাকা এবং দেশী সদস্য ও শুভাকাঙ্ক্ষীদের জন্য মাসিক অনুদান ২০০ টাকা নির্ধারিত রয়েছে। সংগৃহীত অর্থ স্বচ্ছতা ও জবাবদিহিতার সাথে মানবিক কাজে ব্যয় করা হয়।"
+            },
+            {
+                q: "৫. দেশ ও প্রবাসের সদস্যদের মধ্যে কীভাবে সমন্বয় করা হয়?",
+                a: "ফেসবুক, মেসেঞ্জার গ্রুপ ও অনলাইন সভার মাধ্যমে নিয়মিত কার্যক্রমের আপডেট, তহবিলের হিসাব ও সিদ্ধান্ত শেয়ার করা হয় এবং দেশে অবস্থানরত সদস্য ও দায়িত্বশীলরা মাঠপর্যায়ে সশরীরে বৈঠক ও কার্যক্রম পরিচালনা করেন।"
+            },
+            {
+                q: "৬. নতুন সদস্য হওয়ার প্রক্রিয়া ও দায়িত্ব বণ্টনের মানদণ্ড কী?",
+                a: "সংগঠনের অরাজনৈতিক, শিক্ষামূলক ও মানবিক আদর্শের সাথে একমত হয়ে আগ্রহী ব্যক্তি সদস্য লিংকের ফর্ম পূরণ করে যুক্ত হতে পারেন। ফর্ম পূরণ করলে ক্রমিক সংখ্যা (০০১, ০০২, ০০৩...) ও পরিচিতি পর্ব অটো তৈরি হয়। দায়িত্ব বণ্টনে পদ বা লোকদেখানোর চেয়ে আন্তরিকতা, সময় দেওয়ার মানসিকতা, সততা, জবাবদিহিতা ও কাজের প্রতি নিষ্ঠাকে প্রাধান্য দেওয়া হয়।"
+            },
+            {
+                q: "৭. চ্যালেঞ্জগুলো কীভাবে মোকাবিলা করা হয়?",
+                a: "তহবিলের সীমাবদ্ধতা, সদস্যদের কর্মব্যস্ততায় সমন্বয় বা ভুল বোঝাবুঝির মতো চ্যালেঞ্জ সততা, স্বচ্ছতা, পরিষ্কার হিসাব, নিয়মিত অনলাইন/অফলাইন বৈঠক এবং সম্মিলিত পরামর্শের মাধ্যমে মোকাবিলা করা হয়।"
+            }
+        ];
+
+        // =========================================================================
+        // ৪. টোস্ট, কপি এবং ৩ ডট (⋮) মেনু ড্রপডাউন লজিক
+        // =========================================================================
+        function showToast(message, isSuccess = true) {
+            const toast = document.getElementById('toast');
+            const msg = document.getElementById('toast-message');
+            const icon = document.getElementById('toast-icon');
+            msg.textContent = message;
+            icon.className = isSuccess
+                ? 'fa-solid fa-circle-check text-emerald-400 text-lg shrink-0'
+                : 'fa-solid fa-circle-info text-amber-400 text-lg shrink-0';
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 3400);
+        }
+
+        function copyText(text, label) {
+            const temp = document.createElement('input');
+            temp.value = text;
+            document.body.appendChild(temp);
+            temp.select();
+            try {
+                document.execCommand('copy');
+                showToast(`${label} কপি করা হয়েছে!`);
+            } catch (err) {
+                showToast('কপি করা সম্ভব হয়নি।', false);
+            }
+            document.body.removeChild(temp);
+        }
+
+        // ৩ ডট (⋮) মেনু টগল (নির্ভরযোগ্যভাবে ওপেন ও ক্লোজ হওয়ার লজিক)
+        const threeDotBtn = document.getElementById('three-dot-menu-btn');
+        const threeDotDropdown = document.getElementById('three-dot-dropdown');
+
+        threeDotBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isHidden = threeDotDropdown.classList.contains('hidden');
+            if (isHidden) {
+                threeDotDropdown.classList.remove('hidden');
+                threeDotBtn.setAttribute('aria-expanded', 'true');
+            } else {
+                threeDotDropdown.classList.add('hidden');
+                threeDotBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        threeDotDropdown.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+        document.querySelectorAll('.dropdown-nav-item').forEach(link => {
+            link.addEventListener('click', () => {
+                threeDotDropdown.classList.add('hidden');
+                threeDotBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        document.addEventListener('click', () => {
+            if (!threeDotDropdown.classList.contains('hidden')) {
+                threeDotDropdown.classList.add('hidden');
+                threeDotBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // =========================================================================
+        // ৫. এনায়েত ফান্ড, দায়িত্বশীলগন, ছবি/ভিডিও, মাসআলা, অভিযোগ ও বিকাশ হ্যান্ডলার
+        // =========================================================================
+        function getSelectedMonthlyRate() {
+            const checked = document.querySelector('input[name="donorRole"]:checked');
+            return checked ? Number(checked.value) : 500;
+        }
+        function syncFundAmount(rate) {
+            const months = Math.max(1, Number(document.getElementById('fund-months-input').value) || 1);
+            document.getElementById('fund-amount-input').value = rate * months;
+        }
+        function recalcFundTotal() {
+            const rate = getSelectedMonthlyRate();
+            const months = Math.max(1, Number(document.getElementById('fund-months-input').value) || 1);
+            document.getElementById('fund-amount-input').value = rate * months;
+        }
+        function submitFundPledge() {
+            const amt = Number(document.getElementById('fund-amount-input').value);
+            const name = document.getElementById('fund-sender-name').value.trim() || 'সম্মানিত শুভাকাঙ্ক্ষী';
+            if (!amt || amt <= 0) {
+                showToast('অনুগ্রহ করে অনুদানের পরিমাণ লিখুন।', false);
+                return;
+            }
+            showToast(`${name}—এনায়েত ফান্ডে ৳${amt} অনুদানের তথ্য নোট করা হয়েছে।`);
+        }
+
+        // দায়িত্বশীলগন যোগ করা
+        function toggleAddLeaderForm() {
+            document.getElementById('add-leader-box').classList.toggle('hidden');
+        }
+
+        document.getElementById('add-leader-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('ldr-name').value.trim();
+            const role = document.getElementById('ldr-role').value.trim();
+            const location = document.getElementById('ldr-location').value.trim() || 'আল মুনতাসির সংগঠন';
+            if (!name || !role) return;
+
+            const grid = document.getElementById('leaders-grid');
+            const card = document.createElement('div');
+            card.className = 'card-elevated bg-teal-50/95 rounded-3xl p-6 border border-teal-200 shadow-sm';
+            card.innerHTML = `
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-bold bg-teal-200 text-teal-950 px-3 py-1 rounded-full">${role}</span>
+                    <i class="fa-solid fa-user-check text-teal-700 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mt-2">${name}</h3>
+                <p class="text-xs sm:text-sm text-slate-700 mt-2 leading-relaxed">
+                    আল মুনতাসির সংগঠনের মানবিক ও শিক্ষামূলক কার্যক্রম বাস্তবায়নে দায়িত্বশীল হিসেবে নিয়োজিত।
+                </p>
+                <div class="mt-4 pt-3 border-t border-teal-200 text-xs text-teal-900 font-semibold flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>${location}</span>
+                </div>
+            `;
+            grid.appendChild(card);
+
+            document.getElementById('ldr-name').value = '';
+            document.getElementById('ldr-role').value = '';
+            document.getElementById('ldr-location').value = '';
+            document.getElementById('add-leader-box').classList.add('hidden');
+            showToast(`${name} (${role}) দায়িত্বশীল তালিকায় যুক্ত হয়েছেন!`);
+        });
+
+        // কার্যক্রমের নতুন পিক (ছবি) আপলোড
+        function handlePhotoUpload(event) {
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const grid = document.getElementById('activity-photos-grid');
+                const card = document.createElement('div');
+                card.className = 'card-elevated bg-emerald-50/95 rounded-3xl overflow-hidden border border-emerald-300 shadow-sm';
+                card.innerHTML = `
+                    <img src="${e.target.result}" alt="সংগঠনের কার্যক্রমের ছবি" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-full">নতুন সংযুক্ত ছবি</span>
+                        <h3 class="font-bold text-slate-900 text-base mt-2">${file.name.replace(/\.[^/.]+$/, '')}</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1">আল মুনতাসির সংগঠনের সামাজিক ও মানবিক কার্যক্রমের স্থিরচিত্র।</p>
+                    </div>
+                `;
+                grid.prepend(card);
+                showToast('কার্যক্রমের ছবি গ্যালারিতে যুক্ত হয়েছে!');
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // সংগঠনের ভিডিও যোগ করা
+        function toggleVideoAddForm() {
+            document.getElementById('video-add-box').classList.toggle('hidden');
+        }
+
+        document.getElementById('add-video-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const title = document.getElementById('vid-title').value.trim();
+            const url = document.getElementById('vid-url').value.trim();
+            if (!title || !url) return;
+
+            const grid = document.getElementById('org-videos-grid');
+            const card = document.createElement('div');
+            card.className = 'bg-blue-950 text-white rounded-3xl overflow-hidden border border-blue-700 shadow-md';
+            card.innerHTML = `
+                <div class="relative bg-gradient-to-br from-blue-950 via-indigo-950 to-emerald-950 p-6 sm:p-8 flex flex-col justify-between min-h-[210px]">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold bg-sky-400/20 text-sky-300 border border-sky-400/40 px-3 py-1 rounded-full">নতুন ভিডিও</span>
+                        <i class="fa-solid fa-circle-play text-amber-300 text-xl"></i>
+                    </div>
+                    <div class="my-4">
+                        <h3 class="text-lg sm:text-xl font-bold text-white">${title}</h3>
+                        <p class="text-xs text-blue-200 mt-1 break-all">${url}</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-white/15">
+                        <span class="text-xs text-emerald-300">আল মুনতাসির সংগঠন মিডিয়া</span>
+                        <a href="${url}" target="_blank" rel="noopener noreferrer" class="bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs px-3.5 py-1.5 rounded-lg transition-colors">
+                            ভিডিও দেখুন
+                        </a>
+                    </div>
+                </div>
+            `;
+            grid.prepend(card);
+            document.getElementById('vid-title').value = '';
+            document.getElementById('vid-url').value = '';
+            document.getElementById('video-add-box').classList.add('hidden');
+            showToast('নতুন ভিডিও তালিকায় যুক্ত হয়েছে!');
+        });
+
+        // শরীয়তের মাসআলা মাসায়েল জিজ্ঞাসাবাদ (অটো হোয়াটসঅ্যাপসহ)
+        let masalaCount = 1;
+        document.getElementById('masala-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const cat = document.getElementById('masala-category').value;
+            const asker = document.getElementById('masala-asker').value.trim() || 'নাম প্রকাশে অনিচ্ছুক';
+            const qText = document.getElementById('masala-question').value.trim();
+            if (!qText) return;
+
+            masalaCount += 1;
+            document.getElementById('masala-count').textContent = `${masalaCount}টি প্রশ্ন`;
+
+            const list = document.getElementById('masala-list');
+            const item = document.createElement('div');
+            item.className = 'p-3.5 rounded-xl bg-amber-50/90 border border-amber-200 text-sm';
+            item.innerHTML = `
+                <div class="flex items-center justify-between text-xs mb-1">
+                    <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">${cat}</span>
+                    <span class="text-slate-500">${asker}</span>
+                </div>
+                <p class="text-slate-900 font-medium">${qText}</p>
+                <p class="text-xs text-amber-800 mt-1.5">অবস্থা: আলেম/মুফতি সাহেবগণের পর্যালোচনার জন্য সংরক্ষিত।</p>
+            `;
+            list.prepend(item);
+
+            const waMasalaMsg = `আসসালামু আলাইকুম।\n*আল মুনতাসির সংগঠন — শরীয়তে মাসআলা জিজ্ঞাসাবাদ*\nবিষয়: ${cat}\nপ্রশ্নকারী: ${asker}\nপ্রশ্ন: ${qText}`;
+            openAutoWhatsApp(waMasalaMsg);
+
+            document.getElementById('masala-question').value = '';
+            showToast('মাসআলা প্রশ্ন জমা হয়েছে এবং হোয়াটসঅ্যাপ ওপেন হচ্ছে।');
+        });
+
+        function copyMasalaText() {
+            const cat = document.getElementById('masala-category').value;
+            const q = document.getElementById('masala-question').value.trim();
+            if (!q) {
+                showToast('আগে প্রশ্নটি লিখুন।', false);
+                return;
+            }
+            copyText(`বিষয়: ${cat}\nপ্রশ্ন: ${q}`, 'মাসআলা প্রশ্ন');
+        }
+
+        // FAQ অ্যাকর্ডিয়ন রেন্ডারিং
+        const faqContainer = document.getElementById('faq-container');
+        FAQ_ITEMS.forEach((item, idx) => {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'bg-emerald-50/95 rounded-2xl border border-emerald-200 overflow-hidden shadow-sm';
+            wrapper.innerHTML = `
+                <button type="button" aria-expanded="false" onclick="toggleFaq(${idx})" class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-slate-900 hover:bg-amber-50 transition-colors text-sm sm:text-base">
+                    <span>${item.q}</span>
+                    <i id="faq-icon-${idx}" class="fa-solid fa-chevron-down text-emerald-700 text-sm transition-transform duration-200 shrink-0"></i>
+                </button>
+                <div id="faq-body-${idx}" class="hidden px-5 pb-4 pt-2 text-sm sm:text-base text-slate-700 leading-relaxed border-t border-emerald-200/80 bg-sky-50/60">
+                    ${item.a}
+                </div>
+            `;
+            faqContainer.appendChild(wrapper);
+        });
+
+        function toggleFaq(idx) {
+            const body = document.getElementById(`faq-body-${idx}`);
+            const icon = document.getElementById(`faq-icon-${idx}`);
+            const isOpening = body.classList.contains('hidden');
+            body.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180', isOpening);
+        }
+
+        // অভিযোগ বক্স হ্যান্ডলার (অটো হোয়াটসঅ্যাপ 01615-975515 যুক্ত)
+        let complaintCount = 0;
+        let lastComplaintText = '';
+
+        document.getElementById('complaint-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const cName = document.getElementById('cmp-name').value.trim() || 'নাম গোপন রাখা হয়েছে';
+            const cPhone = document.getElementById('cmp-phone').value.trim() || 'দেওয়া হয়নি';
+            const cCategory = document.getElementById('cmp-category').value;
+            const cDetails = document.getElementById('cmp-details').value.trim();
+            if (!cDetails) return;
+
+            complaintCount += 1;
+            const serialBn = toBengaliSerial(complaintCount);
+            document.getElementById('complaint-count').textContent = `${serialBn}টি`;
+
+            const list = document.getElementById('complaint-list');
+            if (complaintCount === 1) {
+                list.innerHTML = '';
+            }
+            const item = document.createElement('div');
+            item.className = 'p-3.5 rounded-xl bg-rose-50 border border-rose-200 text-slate-800';
+            item.innerHTML = `
+                <div class="flex items-center justify-between text-xs mb-1">
+                    <span class="font-bold text-rose-800 bg-rose-100 px-2 py-0.5 rounded">${cCategory}</span>
+                    <span class="font-mono text-slate-500">অভিযোগ #${serialBn}</span>
+                </div>
+                <p class="font-medium text-slate-900">${cDetails}</p>
+                <p class="text-[11px] text-slate-500 mt-1">প্রেরক: ${cName}</p>
+            `;
+            list.prepend(item);
+
+            lastComplaintText = [
+                'আসসালামু আলাইকুম।',
+                '*আল মুনতাসির সংগঠন — অভিযোগ বক্স*',
+                `অভিযোগ ক্রমিক: ${serialBn}`,
+                `ধরন: ${cCategory}`,
+                `অভিযোগকারী: ${cName}`,
+                `যোগাযোগ নম্বর: ${cPhone}`,
+                `বিস্তারিত বিবরণ: ${cDetails}`
+            ].join('\n');
+
+            openAutoWhatsApp(lastComplaintText);
+            document.getElementById('cmp-details').value = '';
+            showToast('অভিযোগ জমা হয়েছে এবং অটো-হোয়াটসঅ্যাপে পাঠানো হচ্ছে!');
+        });
+
+        function copyLastComplaint() {
+            if (!lastComplaintText) {
+                const cDetails = document.getElementById('cmp-details').value.trim();
+                if (!cDetails) {
+                    showToast('আগে অভিযোগের বিবরণ লিখুন।', false);
+                    return;
+                }
+                copyText(cDetails, 'অভিযোগের বিবরণ');
+                return;
+            }
+            copyText(lastComplaintText, 'অভিযোগের তথ্য');
+        }
+
+        // বিকাশ পেমেন্ট নিশ্চিতকরণ স্লিপ
+        let lastBkashSlipText = '';
+        document.getElementById('bkash-confirm-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const senderName = document.getElementById('bk-sender-name').value.trim();
+            const senderNum = document.getElementById('bk-sender-num').value.trim();
+            const amount = document.getElementById('bk-amount').value.trim();
+            const purpose = document.getElementById('bk-purpose').value;
+            const trxId = document.getElementById('bk-trxid').value.trim().toUpperCase();
+
+            const refCode = `BKS-${Math.floor(100000 + Math.random() * 900000)}`;
+            document.getElementById('slip-ref-code').textContent = `রেফারেন্স: ${refCode}`;
+            document.getElementById('slip-details').innerHTML = `
+                <div><strong>প্রেরক:</strong> ${senderName} (${senderNum})</div>
+                <div><strong>প্রাপক:</strong> আল মুনতাসির সংগঠন তহবিল — বিকাশ (01624-507765)</div>
+                <div><strong>খাত:</strong> ${purpose}</div>
+                <div><strong>পরিমাণ:</strong> ৳${amount} | <strong>TrxID:</strong> <span class="font-mono font-bold text-bkash-700">${trxId}</span></div>
+            `;
+
+            lastBkashSlipText = [
+                'আল মুনতাসির সংগঠন — বিকাশ অনুদান তথ্য',
+                `রসিদ নম্বর: ${refCode}`,
+                `প্রেরক: ${senderName}`,
+                `প্রেরকের বিকাশ নম্বর: ${senderNum}`,
+                `প্রাপক: আল মুনতাসির সংগঠন বিকাশ নম্বর (01624-507765)`,
+                `অনুদানের খাত: ${purpose}`,
+                `টাকার পরিমাণ: ৳${amount}`,
+                `Transaction ID (TrxID): ${trxId}`
+            ].join('\n');
+
+            document.getElementById('bkash-slip-box').classList.remove('hidden');
+            showToast('বিকাশ অনুদানের তথ্য সফলভাবে সংরক্ষণ করা হয়েছে!');
+        });
+
+        function copyBkashSlip() {
+            if (!lastBkashSlipText) return;
+            copyText(lastBkashSlipText, 'বিকাশ অনুদান স্লিপ');
+        }
+
+        // =========================================================================
+        // ৬. সদস্য নিবন্ধন ফর্ম, ক্রমিক সংখ্যা (০০১, ০০২, ০০৩...), অটো পরিচিতি পর্ব ডাউনলোড ও অটো হোয়াটসঅ্যাপ
+        // =========================================================================
+        const divSelect = document.getElementById('m-division');
+        const distSelect = document.getElementById('m-district');
+        const thanaSelect = document.getElementById('m-thana');
+
+        Object.keys(BD_GEO_DATA).forEach(divName => {
+            const opt = document.createElement('option');
+            opt.value = divName;
+            opt.textContent = divName;
+            divSelect.appendChild(opt);
+        });
+
+        divSelect.addEventListener('change', function() {
+            const selectedDiv = this.value;
+            distSelect.innerHTML = '<option value="">জেলা নির্বাচন করুন</option>';
+            thanaSelect.innerHTML = '<option value="">আগে জেলা দিন</option>';
+            thanaSelect.disabled = true;
+
+            if (selectedDiv && BD_GEO_DATA[selectedDiv]) {
+                distSelect.disabled = false;
+                Object.keys(BD_GEO_DATA[selectedDiv]).forEach(distName => {
+                    const opt = document.createElement('option');
+                    opt.value = distName;
+                    opt.textContent = distName;
+                    distSelect.appendChild(opt);
+                });
+            } else {
+                distSelect.disabled = true;
+            }
+        });
+
+        distSelect.addEventListener('change', function() {
+            const selectedDiv = divSelect.value;
+            const selectedDist = this.value;
+            thanaSelect.innerHTML = '<option value="">থানা / উপজেলা নির্বাচন করুন</option>';
+
+            if (selectedDiv && selectedDist && BD_GEO_DATA[selectedDiv][selectedDist]) {
+                thanaSelect.disabled = false;
+                BD_GEO_DATA[selectedDiv][selectedDist].forEach(thanaName => {
+                    const opt = document.createElement('option');
+                    opt.value = thanaName;
+                    opt.textContent = thanaName;
+                    thanaSelect.appendChild(opt);
+                });
+            } else {
+                thanaSelect.disabled = true;
+            }
+        });
+
+        function toggleExpatriateField() {
+            const residence = document.querySelector('input[name="currentResidence"]:checked').value;
+            const box = document.getElementById('expatriate-country-box');
+            const countrySelect = document.getElementById('m-country');
+            if (residence === 'প্রবাসী') {
+                box.classList.remove('hidden');
+                countrySelect.required = true;
+            } else {
+                box.classList.add('hidden');
+                countrySelect.required = false;
+                countrySelect.value = '';
+                document.getElementById('m-country-other').classList.add('hidden');
+                document.getElementById('m-country-other').value = '';
+            }
+        }
+
+        function handleCountryChange() {
+            const otherInput = document.getElementById('m-country-other');
+            if (document.getElementById('m-country').value === 'অন্যান্য দেশ') {
+                otherInput.classList.remove('hidden');
+                otherInput.required = true;
+            } else {
+                otherInput.classList.add('hidden');
+                otherInput.required = false;
+                otherInput.value = '';
+            }
+        }
+
+        const shareUrlInput = document.getElementById('share-member-url');
+        const baseHref = window.location.href.split('#')[0];
+        shareUrlInput.value = `${baseHref}#member-link`;
+
+        function copyMemberLink() {
+            copyText(shareUrlInput.value, 'সদস্য নিবন্ধন লিংক');
+        }
+
+        function toBengaliSerial(num) {
+            const bnDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+            const padded = String(num).padStart(3, '0');
+            return padded.replace(/\d/g, d => bnDigits[Number(d)]);
+        }
+
+        function getMemberCounter() {
+            try {
+                return Number(localStorage.getItem('ams_member_serial_count') || '0');
+            } catch (e) {
+                return 0;
+            }
+        }
+
+        function setMemberCounter(val) {
+            try {
+                localStorage.setItem('ams_member_serial_count', String(val));
+            } catch (e) {}
+        }
+
+        let currentMemberCounter = getMemberCounter();
+        document.getElementById('next-serial-preview').textContent = toBengaliSerial(currentMemberCounter + 1);
+        let latestMemberData = null;
+
+        function downloadMemberIntroCard() {
+            if (!latestMemberData) {
+                showToast('আগে সদস্য নিবন্ধন ফর্মটি পূরণ করে জমা দিন।', false);
+                return;
+            }
+
+            const canvas = document.createElement('canvas');
+            canvas.width = 1080;
+            canvas.height = 1350;
+            const ctx = canvas.getContext('2d');
+
+            const bgGrad = ctx.createLinearGradient(0, 0, 1080, 1350);
+            bgGrad.addColorStop(0, '#0f172a');
+            bgGrad.addColorStop(0.45, '#1e3a8a');
+            bgGrad.addColorStop(1, '#064e3b');
+            ctx.fillStyle = bgGrad;
+            ctx.fillRect(0, 0, 1080, 1350);
+
+            ctx.strokeStyle = '#fbbf24';
+            ctx.lineWidth = 8;
+            ctx.strokeRect(36, 36, 1008, 1278);
+
+            ctx.fillStyle = 'rgba(15, 23, 42, 0.75)';
+            ctx.fillRect(64, 64, 952, 230);
+
+            ctx.textAlign = 'center';
+            ctx.fillStyle = '#7dd3fc';
+            ctx.font = 'bold 26px sans-serif';
+            ctx.fillText('AL MUNTASIR ORGANIZATION  |  المؤسسة المنتصر', 540, 125);
+
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 54px sans-serif';
+            ctx.fillText('আল মুনতাসির সংগঠন', 540, 195);
+
+            ctx.fillStyle = '#fde047';
+            ctx.font = 'bold 24px sans-serif';
+            ctx.fillText('৩ নং চরমোহনা, ৬নং ওয়ার্ড, দক্ষিণ রায়পুর, রায়পুর, লক্ষ্মীপুর', 540, 250);
+
+            ctx.fillStyle = '#f59e0b';
+            ctx.fillRect(310, 325, 460, 68);
+            ctx.fillStyle = '#0f172a';
+            ctx.font = 'bold 34px sans-serif';
+            ctx.fillText(`সদস্য ক্রমিক নং: ${latestMemberData.serialBn}`, 540, 370);
+
+            ctx.fillStyle = '#6ee7b7';
+            ctx.font = 'bold 34px sans-serif';
+            ctx.fillText('— সম্মানিত সদস্য পরিচিতি পর্ব —', 540, 450);
+
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.10)';
+            ctx.fillRect(74, 480, 932, 270);
+
+            ctx.fillStyle = '#f8fafc';
+            ctx.font = '28px sans-serif';
+            const words = latestMemberData.introParagraph.split(' ');
+            let line = '';
+            let y = 535;
+            for (let n = 0; n < words.length; n++) {
+                const testLine = line + words[n] + ' ';
+                if (ctx.measureText(testLine).width > 860 && n > 0) {
+                    ctx.fillText(line.trim(), 540, y);
+                    line = words[n] + ' ';
+                    y += 44;
+                } else {
+                    line = testLine;
+                }
+            }
+            ctx.fillText(line.trim(), 540, y);
+
+            ctx.textAlign = 'left';
+            ctx.fillStyle = 'rgba(6, 78, 59, 0.75)';
+            ctx.fillRect(74, 785, 932, 375);
+
+            const rows = [
+                `ক্রমিক সংখ্যা :  ${latestMemberData.serialBn}`,
+                `সদস্যের নাম :  ${latestMemberData.name}`,
+                `বাবা :  ${latestMemberData.father}`,
+                `মোবাইল :  ${latestMemberData.mobile}`,
+                `হোয়াটসঅ্যাপ :  ${latestMemberData.whatsapp}`,
+                `বর্তমান ঠিকানা :  ${latestMemberData.residenceText}`,
+                `ঠিকানা :  ${latestMemberData.shortAddress}`
+            ];
+
+            let rowY = 845;
+            rows.forEach((rowText, idx) => {
+                ctx.fillStyle = idx === 0 ? '#fde047' : '#ffffff';
+                ctx.font = idx === 0 ? 'bold 30px sans-serif' : '27px sans-serif';
+                ctx.fillText(rowText, 110, rowY);
+                rowY += 48;
+            });
+
+            ctx.textAlign = 'center';
+            ctx.fillStyle = '#cbd5e1';
+            ctx.font = '24px sans-serif';
+            ctx.fillText('প্রতিষ্ঠাতা ও প্রধান উপদেষ্টা: হযরত মাওলানা আবু নাইম সাহেব', 540, 1220);
+            ctx.fillStyle = '#fde047';
+            ctx.font = 'bold 22px sans-serif';
+            ctx.fillText('শতভাগ অরাজনৈতিক, অলাভজনক, মানবিক ও শিক্ষামূলক সামাজিক সংগঠন', 540, 1265);
+
+            const link = document.createElement('a');
+            link.download = `Al-Muntasir-Member-${latestMemberData.serialBn}.png`;
+            link.href = canvas.toDataURL('image/png');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function getMemberSummaryText() {
+            if (!latestMemberData) return '';
+            return [
+                'আসসালামু আলাইকুম।',
+                '*আল মুনতাসির সংগঠন (AL MUNTASIR ORGANIZATION) — المؤسسة المنتصر*',
+                `*নতুন সদস্য পরিচিতি পর্ব (ক্রমিক নং: ${latestMemberData.serialBn})*`,
+                `পরিচিতি: ${latestMemberData.introParagraph}`,
+                `নাম: ${latestMemberData.name}`,
+                `বাবা: ${latestMemberData.father}`,
+                `মোবাইল: ${latestMemberData.mobile}`,
+                `হোয়াটসঅ্যাপ: ${latestMemberData.whatsapp}`,
+                `ঠিকানা: ${latestMemberData.fullAddress}`,
+                `বর্তমান ঠিকানা: ${latestMemberData.residenceText}`
+            ].join('\n');
+        }
+
+        function sendMemberToWhatsApp() {
+            if (!latestMemberData) {
+                showToast('আগে সদস্য আবেদন ফর্মটি পূরণ করে জমা দিন।', false);
+                return;
+            }
+            openAutoWhatsApp(getMemberSummaryText());
+        }
+
+        document.getElementById('member-registration-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('m-name').value.trim();
+            const father = document.getElementById('m-father').value.trim();
+            const mobile = document.getElementById('m-mobile').value.trim();
+            const whatsapp = document.getElementById('m-whatsapp').value.trim();
+            const division = divSelect.value;
+            const district = distSelect.value;
+            const thana = thanaSelect.value;
+            const village = document.getElementById('m-village').value.trim();
+            const residence = document.querySelector('input[name="currentResidence"]:checked').value;
+
+            let residenceText = 'বাংলাদেশ';
+            if (residence === 'প্রবাসী') {
+                const chosenCountry = document.getElementById('m-country').value;
+                const otherCountry = document.getElementById('m-country-other').value.trim();
+                const finalCountry = chosenCountry === 'অন্যান্য দেশ' && otherCountry ? otherCountry : chosenCountry;
+                residenceText = `প্রবাসী (${finalCountry || 'বিদেশ'})`;
+            }
+
+            currentMemberCounter += 1;
+            setMemberCounter(currentMemberCounter);
+            const serialBn = toBengaliSerial(currentMemberCounter);
+            document.getElementById('next-serial-preview').textContent = toBengaliSerial(currentMemberCounter + 1);
+
+            const fullAddress = `${village}, থানা/উপজেলা: ${thana}, জেলা: ${district}, বিভাগ: ${division}`;
+            const shortAddress = `${village}, ${thana}, ${district}`;
+            const introParagraph = `আসসালামু আলাইকুম। আমি ${name}, বাবা: ${father}। আমার ঠিকানা ${shortAddress} এবং বর্তমানে আমি ${residenceText}-এ অবস্থান করছি। মানবতা, শিক্ষা ও সমাজকল্যাণের আদর্শে অনুপ্রাণিত হয়ে আল মুনতাসির সংগঠনের সদস্য হিসেবে যুক্ত হলাম। (সদস্য ক্রমিক নং: ${serialBn})`;
+
+            latestMemberData = {
+                serialBn,
+                name,
+                father,
+                mobile,
+                whatsapp,
+                fullAddress,
+                shortAddress,
+                residenceText,
+                introParagraph
+            };
+
+            document.getElementById('r-id').textContent = serialBn;
+            document.getElementById('r-name').textContent = name;
+            document.getElementById('r-father').textContent = father;
+            document.getElementById('r-mobile').textContent = mobile;
+            document.getElementById('r-whatsapp').textContent = whatsapp;
+            document.getElementById('r-address').textContent = fullAddress;
+            document.getElementById('r-residence').textContent = residenceText;
+            document.getElementById('auto-intro-box').innerHTML = `<strong class="text-amber-300 block mb-1">স্বাগতম ও পরিচিতি পর্ব (ক্রমিক নং: ${serialBn}):</strong>${introParagraph}`;
+
+            const badge = document.getElementById('receipt-badge');
+            badge.textContent = `ক্রমিক: ${serialBn}`;
+            badge.className = 'text-xs bg-emerald-500 text-slate-950 font-extrabold px-3 py-1 rounded-full block';
+
+            showToast(`সদস্য ক্রমিক নং ${serialBn} নিবন্ধিত হয়েছে, পরিচিতি পর্ব ডাউনলোড হচ্ছে ও হোয়াটসঅ্যাপে পাঠানো হচ্ছে!`);
+            downloadMemberIntroCard();
+            openAutoWhatsApp(getMemberSummaryText());
+        });
+
+        function copyReceiptSummary() {
+            const summary = getMemberSummaryText();
+            if (!summary) {
+                showToast('আগে সদস্য আবেদন ফর্মটি পূরণ ও জমা দিন।', false);
+                return;
+            }
+            copyText(summary, 'সদস্য পরিচিতি পর্ব');
+        }
+    </script>
+</body>
+</html>
